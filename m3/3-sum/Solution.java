@@ -13,15 +13,15 @@ class Solution {
 		for (int k = 0; k < arr.length; k++) {
         int i = 0;
         int j = arr.length - 1;
-			while (j != k && i != k && i < j) {
-                if (arr[i] + arr[j] == -arr[k]) {
-                    count++;
-                    i++;
-                } else if (arr[i] + arr[j] > -arr[k]) {
-                    j--;
-                } else {
-                    i++;
-                }
+		while (j != k && i != k && i < j) {
+            if (arr[i] + arr[j] == -arr[k]) {
+                count++;
+                i++;
+            } else if (arr[i] + arr[j] > -arr[k]) {
+                j--;
+            } else {
+                i++;
+            }
             }
         }
 		System.out.println(count);
