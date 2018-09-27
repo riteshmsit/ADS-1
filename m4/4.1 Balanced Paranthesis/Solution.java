@@ -84,10 +84,13 @@ final class Solution {
     }
 
         }
-        /**
-         * @param range value
-         * @param s value
-         * @return y
+        
+        /**.
+         * { function_description }
+         *
+         * @param      s     { parameter_description }
+         *
+         * @return     { description_of_the_return_value }
          */
 public static boolean balanced(final Scanner s) {
 boolean y = false;
@@ -125,3 +128,6 @@ for (int i = 0; i < s2.length(); i++) {
         }
         }
     }
+
+
+
