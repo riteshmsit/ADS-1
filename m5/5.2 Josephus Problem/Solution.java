@@ -1,46 +1,47 @@
 import java.util.Scanner;
 import java.util.Arrays;
-class Josephus {
-	int[] seats;
-	int size;
-	int skipval;
-	Josephus(int inputsize, int inputskipval) {
-		this.seats = new int[inputsize];
-		this.size = inputsize;
-		for (int l = 0; l < this.size; l++) {
-			seats[l] = l;
+import java.util.ArrayList;
+public class Solution {
+	public void find(int np, int pos) {
+		int[] persons = new int[np];
+		for (int i = 0; i < np; i++) {
+			persons[i] = i;
 		}
-		this.skipval = inputskipval;
-	}
-	void removing() {
-		int i = 0;
-		String str = "";
-		while (this.size > 0) {
-			int rem = 0;
-			while (i + skipval - 1 > (this.size) - 1) {
-				i = i - this.size ;
+		int count = np, i = 1, index = 0;
+		String s = "";
+		while (count != 0) {
+			
+			if (persons[index % np] != -999) {
+				if (i == pos) {
+					//System.out.print(persons[index % np]);
+					s += persons[index % np] + " ";
+					persons[index % np] = -999;
+					count--;
+					i = 1;
+					index++;
+				} else {
+					index++;
+					i++;
+				}
+			} else {
+				index++;
 			}
-			str = str + seats[i + skipval - 1] + " ";
-			for (int j = i + skipval - 1; j < this.size - 1; j++) {
-				seats[j] = seats[j + 1];
-			}
-			i = i + skipval - 1;
-			this.size--;
+
 		}
-		System.out.println(str.trim());
-	}
-}
-class Solution {
-	Solution() {
-		
+		System.out.println(s.trim());
+
 	}
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int testnum = Integer.parseInt(scan.nextLine());
-		for (int k = 0; k < testnum; k++) {
-			String[] tokens = scan.nextLine().split(" ");
-			Josephus start = new Josephus(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
-			start.removing();
+		Scanner sc = new Scanner(System.in);
+		Solution s = new Solution();
+		int n = sc.nextInt();
+		int np, p;
+		for (int i = 0; i < n; i++) {
+			np = sc.nextInt();
+			p = sc.nextInt();
+			//System.out.println(np,p);
+			s.find(np, p);
+
 		}
 	}
 }
