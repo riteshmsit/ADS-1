@@ -82,7 +82,7 @@ class Solution {
 					if (!d.isEmpty()) {
 						System.out.println(d.print());
 					} else {
-						System.out.println("Deck is empty");
+						System.out.println("[]");
 					}
 					break;
 				case "popRight":
@@ -90,7 +90,7 @@ class Solution {
 					if (!d.isEmpty()) {
 						System.out.println(d.print());
 					} else {
-						System.out.println("Deck is empty");
+						System.out.println("[]");
 					}
 					break;
 				default:
