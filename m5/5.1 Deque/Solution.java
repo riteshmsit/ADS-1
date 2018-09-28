@@ -1,139 +1,60 @@
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.ArrayList;
-class Dequeue<E> {
-	E[] dequeue;
-	int head, tail, capacity;
-	public Dequeue() {
-		dequeue = (E[])new Object[2000];
-		capacity = 2000;
-		head = 1000;
-		tail = 1000;
-	}
-	public void pushright(E item) {
-		if (tail < capacity) {
-			dequeue[tail++] = item;
-		}
-	}
-	public void popleft() {
-		if (head < tail) {
-			dequeue[head] = null;
-			head++;
-		}
-	}
-	public void pushleft(E item) {
-		if (head > 0) {
-			head--;
-			dequeue[head] = item;
-		}
-	}
-	public void popright() {
-		if (tail > head) {
-			//tail--;
-			dequeue[tail--] = null;
-		}
-	}
-	public int size() {
-		if (head != tail)
-			return tail - head;
-		return 0;
-	}
-	public boolean isEmpty() {
-		return size() == 0;
-	}
-	
-	public String print() {
-		if (!isEmpty()) {
-			String s = "[";
-			int i = head;
-			for (i = head; i < tail - 1; i++) {
-				s += dequeue[i] + ", ";
-			}
-			s += dequeue[i] + "]";
-			return s;
-		} else {
-			return "[]";
-		}
-		//return "something wrong";
-	}
+/**DEQUEUE.**/
+final class Solution {
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     */
+    private Solution() { }
+    /**
+     * @param args value
+     */
+    public static void main(final String[] args) {
+        Deque dequeue = new Deque();
+        //LinkedList linklist = new LinkedList();
+        Scanner s = new Scanner(System.in);
+        String s1 = s.nextLine();
+        int num = Integer.parseInt(s1);
+        int j = 0;
+        while (j < num) {
+        String[] tokens = s.nextLine().split(" ");
+        //System.out.println(tokens[0] + "  " + tokens[1]);
+            switch (tokens[0]) {
+                case "pushLeft" :
+                    dequeue.addFirst(Integer.parseInt(tokens[1]));
+                                 //System.out.println("hello");
+                    System.out.println(dequeue.display());
+                    break;
+                case "pushRight":
+                    dequeue.addLast(Integer.parseInt(tokens[1]));
+                    System.out.println(dequeue.display());
+                    break;
+                case "popLeft":
+                    if (!dequeue.isempty()) {
+                        dequeue.removeFirst();
+                        System.out.println(dequeue.display());
+                        } else {
+                            System.out.println("Deck is empty");
+                            }
+                                //System.out.println(linklist);
+                            break;
+                case "popRight":
+                        if (!dequeue.isempty()) {
+                        dequeue.removeLast();
+                        System.out.println(dequeue.display());
+                            } else {
+                        System.out.println("Deck is empty");
+                            }
+                                break;
+                case "size":
+                        int size = dequeue.size();
+                        System.out.println(size);
+                        break;
+                default:
+                        break;
+            }
+            j++;
+
+        }
+    }
 }
-class Solution {
-	public static void main(String[] args) {
-		Dequeue<Integer> d = new Dequeue<Integer>();
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		String[] input;
-		for (int i = 1; i <= n + 1; i++) {
-			input = sc.nextLine().split(" ");
-			switch (input[0]) {
-				case "size":
-					System.out.println(d.size());
-					break;
-				case "pushLeft":
-					d.pushleft(Integer.parseInt(input[1]));
-					System.out.println(d.print());
-					break;
-				case "pushRight":
-					d.pushright(Integer.parseInt(input[1]));
-					System.out.println(d.print());
-					break;
-				case "popLeft":
-					d.popleft();
-					if (!d.isEmpty()) {
-						System.out.println(d.print());
-					} else {
-						System.out.println("[]");
-					}
-					break;
-				case "popRight":
-					d.popright();
-					if (!d.isEmpty()) {
-						System.out.println(d.print());
-					} else {
-						System.out.println("[]");
-					}
-					break;
-				default:
-					break;
-			}
-		}
-	}
-}
-
-
-
-/*import java.util.Scanner;
-import java.util.Arrays;
-import java.util.ArrayList;
-class Dequeue<E> {
-	E[] dequeue;
-	int head, tail, capacity;
-	public Dequeue() {
-		dequeue = (E[])new Object[2000];
-		capacity = 2000;
-		head = 1000;
-		tail = 1000;
-	}
-	public void pushleft(E item) {
-		if (head < tail){
-		head--;
-		deque[head] = item;
-		size++;
-		}
-	}
-	public void pushright(E item) {
-		if (tail < head) {
-			tail++;
-			deque[tail] = item;
-			size++;
-		}*/
-
-	// }
-	// public void popleft(E item) {
-	// 	if (head < tail)
-	// 	deque[head] = null;
-
-	// }
-	// public void popright(E item) {
-	// 	deque[tail--] = null;
-	// }
