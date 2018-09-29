@@ -18,13 +18,61 @@ class AddLargeNumbers {
         }
         return obj;
     }
-    public static String digitsToNumber(LinkedList list) {
+    public static LinkedList digitsToNumber(LinkedList list) {
         LinkedList obj1 = new LinkedList();
         return obj1.displayAll();
     }
-    // public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+        Stack s1 = new Stack();
+        Stack s2 = new Stack();
+        //LinkedList fors1 = new LinkedList();
+        //for list1
+        Node current = new Node();
+        while (current.next != null) {
+            s1.push(current.value);
+        }
+        //for list2
+        Node current2 = new Node();
+        while (current2.next != null) {
+            s2.push(current2.value);
+        }
+        long stacksize1 = s1.getStackSize();
+        long stacksize2 = s2.getStackSize();
+        String[] sum;
+        int carry;
+        if (stacksize2 == stacksize1) {
+            for (int i = stacksize1; i > 0; i--) {
+                if (carry) {
+                sum[i] += s1.pop(i) + s2.pop(i) + carry;
+                } else {
+                    sum[i] += s1.pop(i) + s2.pop(i);
+                }
+                if (sum > 10) {
+                    int sum = Integer.parseInt();
+                    carry = sum % 10;
+                }
+            }
+        }
+        if (stacksize1 > stacksize2) {
+            long difference = stacksize2 - stacksize1;
+            int i;
+            for (int i = stacksize2; i > 0; i--) {
+                if (carry) {
+                sum[i] += s1.pop(i) + s2.pop(i) + carry;
+                } else {
+                    sum[i] += s1.pop(i) + s2.pop(i);
+                }
+                if (sum > 10) {
+                    carry = sum % 10;
+                }
+            }
+            for (int j = difference; j > 0; i--) {
+                sum += s1.pop(i) + s2.;
+                i++;
 
-    // }
+            }
+        }
+    }
 }
 
 public class Solution {
@@ -40,49 +88,12 @@ public class Solution {
                 System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
                 System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
                 break;
-            // case "addLargeNumbers":
-            //     pDigits = AddLargeNumbers.numberToDigits(p);
-            //     qDigits = AddLargeNumbers.numberToDigits(q);
-            //     LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-            //     System.out.println(AddLargeNumbers.digitsToNumber(result));
-            //     break;
+            case "addLargeNumbers":
+                pDigits = AddLargeNumbers.numberToDigits(p);
+                qDigits = AddLargeNumbers.numberToDigits(q);
+                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                System.out.println(AddLargeNumbers.digitsToNumber(result));
+                break;
         }
     }  
 }
-// public class Stack<E> {
-//     private E[] stack;
-//     private int size, resize;
-//     private Stack() {
-//         stack = (E[])new Object[200];
-//         size = 0;
-//         //resize = 40;
-//     }
-//     public void push(E item) {
-//         if (size == resize) {
-//             resize(2 * size);
-//         }
-//         stack[size++] = item;
-//     }
-//     public E pop() {
-//         if (size == resize / 4) {
-//             resize(size);
-//         }
-//         size--;
-//         return stack[size];
-//     }
-//     // public void resize(int resize) {
-//     //  E[] stack1 = (E[])new Object[resize];
-//     //  for (int i = 0; i < size; i++) {
-//     //      stack1[i] = stack[i];
-//     //  }
-//     //  stack = stack1;
-//     // }
-//     public boolean isEmpty() {
-//         return (size == 0);
-//     }
-//     public void printstack() {
-//         for (int i = 0; i < size; i++) {
-//             System.out.println(stack[i] + " ");
-//         }
-//     }
-// }

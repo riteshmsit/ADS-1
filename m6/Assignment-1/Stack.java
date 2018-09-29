@@ -2,15 +2,15 @@ public class Stack<E> {
 	private E[] stack;
 	private int size, resize;
 	private Stack() {
-		stack = (E[])new Object[200];
+		stack = (E[])new Object[100];
 		size = 0;
-		//resize = 40;
+		resize = 40;
 	}
 	public void push(E item) {
 		if (size == resize) {
 			resize(2 * size);
 		}
-		stack[size++] = item;
+	 	stack[size++] = item;
 	}
 	public E pop() {
 		if (size == resize / 4) {
@@ -19,13 +19,13 @@ public class Stack<E> {
 		size--;
 		return stack[size];
 	}
-	// public void resize(int resize) {
-	// 	E[] stack1 = (E[])new Object[resize];
-	// 	for (int i = 0; i < size; i++) {
-	// 		stack1[i] = stack[i];
-	// 	}
-	// 	stack = stack1;
-	// }
+	public void resize(int resize) {
+		E[] stack1 = (E[])new Object[resize];
+		for (int i = 0; i < size; i++) {
+			stack1[i] = stack[i];
+		}
+		stack = stack1;
+	}
 	public boolean isEmpty() {
 		return (size == 0);
 	}
@@ -33,5 +33,8 @@ public class Stack<E> {
 		for (int i = 0; i < size; i++) {
 			System.out.println(stack[i] + " ");
 		}
+	}
+	public long getStackSize() {
+		return this.size;
 	}
 }
