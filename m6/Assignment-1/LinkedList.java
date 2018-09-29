@@ -114,4 +114,19 @@ public void Insertback(final int value) {
         }
         return "[]";
     }
+    // public LinkedList displayLinked() {
+    //     LinkedList link; 
+    //     if(size!=0) {
+    //         Node temp = head;
+    //         int i = 0;
+    //         while(temp!=null){
+    //             link = temp.value;
+    //             i++;
+    //             temp = temp.next;
+    //         }
+    //         link = link+ temp.value;
+    //         return link;
+    //     }
+    //     return null;
+    // }
 }
