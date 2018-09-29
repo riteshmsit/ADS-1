@@ -1,5 +1,12 @@
 import java.util.Scanner;
 class AddLargeNumbers {
+    // private E[] LinkedList;
+    // private int size, resize;
+    // private AddLargeNumbers() {
+    //     LinkedList = (E[])new Object[20];
+    //     //size = 0;
+    //     //resize = 40;
+    // }
     public static LinkedList numberToDigits(String number) {
         LinkedList obj = new LinkedList();
         int intnumber = Integer.parseInt(number);
