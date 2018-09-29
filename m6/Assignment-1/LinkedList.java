@@ -74,13 +74,17 @@ final class LinkedList {
         head.value = value;
         head.next = null;
         tail = head;
+        size++;
+        return;
     } else {
         Node oldHead = head;
         head = new Node();
         head.value = value;
         head.next = oldHead;
+        size++;
+        return;
     }
-    size++;
+    //size++;
     }
 public void Insertback(final int value) {
         if(tail == null) {
@@ -90,14 +94,18 @@ public void Insertback(final int value) {
             tail.next = null;
         //temp.next = tail;
             head = tail;
+            size++;
+            return;
         }   else {
             Node temp = tail;
             tail = new Node();
             tail.value = value;
             tail.next = null;
             temp.next = tail;
+            size++;
+            return;
         }
-        size++;
+       // size++;
     }
     public int getsize() {
         return size;
@@ -110,7 +118,7 @@ public void Insertback(final int value) {
                 s += temp.value;
                 temp = temp.next;
             }
-            return s.substring(0,s.length()-2) + "";
+            return s;
         }
         return "[]";
     }
