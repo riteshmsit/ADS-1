@@ -82,6 +82,12 @@ final class AddLargeNumbers {
                 eachsum = 0;
             }
         }
+        if (a.isEmpty()) {
+            if (!(carry.isEmpty())) {
+                eachsum = carry.pop();
+                sum.pushHead(eachsum);
+            }
+        }
         while (!(a.isEmpty())) {
             if (carry.isEmpty()) {
                 eachsum = a.pop();
