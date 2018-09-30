@@ -27,6 +27,12 @@ final class AddLargeNumbers {
             l.push(Integer.parseInt(numbers[i]));
         }
         return l;
+        // LinkedList obj = new LinkedList();
+        // String[] s = number.split("");
+        // for (int i = 1; i < s.length; i++) {
+        //     obj.push(Integer.parseInt(s[1]));
+        // }
+        // return obj;
     }
     /**
      * Returns string of linked list.
@@ -37,6 +43,7 @@ final class AddLargeNumbers {
      */
     public static String digitsToNumber(final LinkedList list) {
         return list.toString();
+        //return list.displayAll();
     }
     /**
      * Adds large numbers.
@@ -50,8 +57,8 @@ final class AddLargeNumbers {
         final LinkedList list2) {
         LinkedList sum = new LinkedList();
         LinkedList carry = new LinkedList();
-        LinkedList a, b;
-        int c = 0;
+        LinkedList a,b;
+        int eachsum = 0;
         if (list1.getSize() >= list2.getSize()) {
             a = list1;
             b = list2;
@@ -60,43 +67,110 @@ final class AddLargeNumbers {
             b = list1;
         }
         while (!(b.isEmpty())) {
-            if (carry.isEmpty()) {
-                c = a.pop() + b.pop();
+            if (!(carry.isEmpty())) {
+                eachsum = a.pop() + b.pop() + carry.pop();
             } else {
-                c = a.pop() + b.pop() + carry.pop();
+                eachsum = a.pop() + b.pop();
             }
-            if (c > NINE) {
-                String[] num = Integer.toString(c).split("");
-                sum.pushHead(Integer.parseInt(num[1]));
-                carry.pushHead(Integer.parseInt(num[0]));
-                c = 0;
+            if (eachsum > 9) {
+                String[] s = Integer.toString(eachsum).split("");
+                sum.pushHead(Integer.parseInt(s[1]));
+                carry.pushHead(Integer.parseInt(s[0]));
+                eachsum = 0;
             } else {
-                sum.pushHead(c);
-                c = 0;
-            }
-        }
-        if (!(carry.isEmpty())) {
-            if (a.isEmpty()) {
-                c = carry.pop();
-            } else {
-                c = a.pop() + carry.pop();
-            }
-            if (c > NINE) {
-                String[] num = Integer.toString(c).split("");
-                sum.pushHead(Integer.parseInt(num[1]));
-                carry.pushHead(Integer.parseInt(num[1]));
-                c = 0;
-            } else {
-                sum.pushHead(c);
-                c = 0;
+                sum.pushHead(eachsum);
+                eachsum = 0;
             }
         }
         while (!(a.isEmpty())) {
-            sum.pushHead(a.pop());
+            if (carry.isEmpty()) {
+                eachsum = a.pop();
+            } else {
+                eachsum = a.pop() + carry.pop();
+            }
+            if (eachsum > 9) {
+                String[] abs = Integer.toString(eachsum).split("");
+                sum.pushHead(Integer.parseInt(abs[1]));
+                carry.pushHead(Integer.parseInt(abs[0]));
+                eachsum = 0;
+            } else {
+                sum.pushHead(eachsum);
+                eachsum = 0;
+            }
         }
         return sum;
     }
 }
+        // if (!(carry.isEmpty())) {
+        //         if (a.isEmpty()) {
+        //             eachsum = carry.pop();
+        //         } else {
+        //             eachsum = carry.pop() + a.pop();
+        //         }
+        //         if(eachsum > 9) {
+        //             String[] a = Integer.toString(eachsum).split("");
+        //             sum.pushHead(Integer.parseInt(a[1]));
+        //             carry.pushHead(Integer.parseInt(a[1]));
+        //             eachsum = 0;
+        //         } else {
+        //             sum.pushHead(eachsum);
+        //             eachsum = 0;
+        //         }
+        //     }
+        // }
+
+
+
+
+        // LinkedList sum = new LinkedList();
+        // LinkedList carry = 2new LinkedList();
+        // LinkedList a, b;
+        // int c = 0;
+        // if (list1.getSize() >= list2.getSize()) {
+        //     a = list1;
+        //     b = list2;
+        // } else {
+        //     a = list2;
+        //     b = list1;
+        // }
+        // while (!(b.isEmpty())) {
+        //     if (carry.isEmpty()) {
+        //         c = a.pop() + b.pop();
+        //     } else {
+        //         c = a.pop() + b.pop() + carry.pop();
+        //     }
+        //     if (c > NINE) {
+        //         String[] num = Integer.toString(c).split("");
+        //         sum.pushHead(Integer.parseInt(num[1]));
+        //         carry.pushHead(Integer.parseInt(num[0]));
+        //         c = 0;
+        //     } else {
+        //         sum.pushHead(c);
+        //         c = 0;
+        //     }
+        // }
+        // if (!(carry.isEmpty())) {
+        //     if (a.isEmpty()) {
+        //         c = carry.pop();
+        //     } else {
+        //         c = a.pop() + carry.pop();
+        //     }
+        //     if (c > NINE) {
+        //         String[] num = Integer.toString(c).split("");
+        //         sum.pushHead(Integer.parseInt(num[1]));
+        //         carry.pushHead(Integer.parseInt(num[1]));
+        //         c = 0;
+    //         } else {
+    //             sum.pushHead(c);
+    //             c = 0;
+    //         }
+    //     }
+    //     while (!(a.isEmpty())) {
+    //         sum.pushHead(a.pop());
+    //     }
+    //     return sum;
+    // }
+
 /**
  * Class for solution.
  */
@@ -136,5 +210,4 @@ public final class Solution {
         break;
         }
     }
-
 }
