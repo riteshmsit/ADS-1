@@ -67,7 +67,7 @@ final class AddLargeNumbers {
             } else {
                 c = a.pop() + b.pop() + carry.pop();
             }
-            if (c > 9) {
+            if (c > NINE) {
                 String[] num = Integer.toString(c).split("");
                 sum.pushHead(Integer.parseInt(num[1]));
                 carry.pushHead(Integer.parseInt(num[0]));
@@ -83,7 +83,7 @@ final class AddLargeNumbers {
             } else {
                 c = a.pop() + carry.pop();
             }
-            if (c > 9) {
+            if (c > NINE) {
                 String[] num = Integer.toString(c).split("");
                 sum.pushHead(Integer.parseInt(num[1]));
                 carry.pushHead(Integer.parseInt(num[1]));
