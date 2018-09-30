@@ -111,10 +111,10 @@ public void Insertback(final int value) {
         return size;
     }
     public String displayAll() {
-        if(size!=0) {
+        if(getsize()>0) {
             String s = "";
             Node temp = head;
-            while(temp!=null){
+            while(temp.next!=null){
                 s += temp.value;
                 temp = temp.next;
             }

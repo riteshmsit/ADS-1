@@ -8,22 +8,22 @@ class AddLargeNumbers {
     //     //resize = 40;
     // }
     public static LinkedList numberToDigits(String number) {
-        LinkedList op = new LinkedList();
-        String[] numbers = number.split("", number.length());
-        for (int i = 0; i < numbers.length; i++) {
-            int num = Integer.parseInt(numbers[i]);
-            op.Insertback(num);
-        }
-        return op;
-        // LinkedList obj = new LinkedList();
-        // int intnumber = Integer.parseInt(number);
-        // int b = intnumber;
-        // while (b != 0) {
-        //     int a = b % 10;
-        //     obj.Insertfront(a);
-        //     b = intnumber / 10;
+        // LinkedList op = new LinkedList();
+        // String[] numbers = number.split("", number.length());
+        // for (int i = 0; i < numbers.length; i++) {
+        //     int num = Integer.parseInt(numbers[i]);
+        //     op.Insertback(num);
         // }
-        // return obj;
+        // return op;
+        LinkedList obj = new LinkedList();
+        int intnumber = Integer.parseInt(number);
+        int b = intnumber;
+        while (b != 0) {
+            int a = b % 10;
+            obj.Insertfront(a);
+            b = intnumber / 10;
+        }
+        return obj;
     }
     public static String digitsToNumber(LinkedList list) {
         LinkedList obj1 = new LinkedList();
