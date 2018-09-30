@@ -1,140 +1,125 @@
-final class LinkedList {
+public class LinkedList {
     /**
-     * @brief [brief description]
-     * @details [long description]
+     * Class for node.
      */
-    private Node head;
-    private Node tail;
-    private int size;
-    /**node.**/
-    class Node {
+    private class Node {
+        int data;
+        Node next;
         /**
-         * variable.
+         * Constructs the object.
          */
-        private int value;
-        /**
-         * variable.
-         */
-        private Node next;
-        /**
-         * variable.
-         */
+        Node() {
 
+        }
+        /**
+         * Constructs the object.
+         *
+         * @param      data  The data
+         */
+        Node(int data) {
+            this.data = data;
+        }
+        /**
+         * Constructs the object.
+         *
+         * @param      data  The data
+         * @param      n     { parameter_description }
+         */
+        Node(int data, Node n) {
+            this.data = data;
+            this.next = n;
+        }
     }
+    private Node head, tail;
+    private int size;
     /**
-     * @brief [brief description]
-     * @details [long description]
+     * Constructs the object.
      */
     LinkedList() {
-        head = tail;
-        head = null;
-        size = 0;
+
     }
     /**
-     * @brief [brief description]
-     * @details [long description]
-     * @return value
+     * Pushes an object at tail.
+     *
+     * @param      data  The data
+     */
+    public void push(int data) {
+        if (head == null) {
+            head = new Node(data);
+            tail = head;
+            size++;
+            return;
+        }
+        Node node = new Node(data, null);
+        tail.next = node;
+        tail = node;
+        size++;
+    }
+    /**
+     * Pushes at head.
+     *
+     * @param      data  The data
+     */
+    public void pushHead(int data) {
+        if (head == null) {
+            head = new Node(data);
+            tail = head;
+            size++;
+            return;
+        }
+        Node node = new Node(data, head);
+        head = node;
+        size++;
+    }
+    /**
+     * Pops out the object.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int pop() {
+        if (head != null) {
+            Node temp = head;
+            if(size > 1) {
+                while (temp.next != tail) {
+                    temp = temp.next;
+                }
+            }
+            int val = tail.data;
+            temp.next = null;
+            tail = temp;
+            size--;
+            return val;
+        }
+        return 0;
+    }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
-        if (head == null) {
-            return true;
-        }
-        return false;
+        return size == 0;
     }
     /**
-     * @brief [brief description]
-     * @details [long description]
-     * @return value
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
      */
-    public void Deletefront() {
-        if (head!=null) {
-        head = head.next;
-        size--;
-    }
-    }
-    public void Deleteback() {
-        if (tail != null) {
-       Node temp = head;
-       while(temp.next.next != null) {
-
-            temp = temp.next;
+    public String toString() {
+        Node thead = head;
+        String s = "";
+        while (thead != null) {
+            s += thead.data;
+            thead = thead.next;
         }
-        temp.next = null;
-        tail = temp;
-        size--;
-    }
+        return s;
     }
     /**
-     * @param value value
+     * Gets the size.
+     *
+     * @return     The size.
      */
-    public void Insertfront(final int value) {
-        if(head == null) {
-        //Node oldHead = head;
-        head = new Node();
-        head.value = value;
-        head.next = null;
-        tail = head;
-        size++;
-        return;
-    } else {
-        Node oldHead = head;
-        head = new Node();
-        head.value = value;
-        head.next = oldHead;
-        size++;
-        return;
-    }
-    //size++;
-    }
-public void Insertback(final int value) {
-        if(tail == null) {
-        //Node temp = tail;
-            tail = new Node();
-            tail.value = value;
-            tail.next = null;
-        //temp.next = tail;
-            head = tail;
-            size++;
-            return;
-        }   else {
-            Node temp = tail;
-            tail = new Node();
-            tail.value = value;
-            tail.next = null;
-            temp.next = tail;
-            size++;
-            return;
-        }
-       // size++;
-    }
-    public int getsize() {
+    public int getSize() {
         return size;
     }
-    public String displayAll() {
-        if(getsize()>0) {
-            String s = "";
-            Node temp = head;
-            while(temp.next!=null){
-                s += temp.value;
-                temp = temp.next;
-            }
-            return s;
-        }
-        return "[]";
-    }
-    // public LinkedList displayLinked() {
-    //     LinkedList link; 
-    //     if(size!=0) {
-    //         Node temp = head;
-    //         int i = 0;
-    //         while(temp!=null){
-    //             link = temp.value;
-    //             i++;
-    //             temp = temp.next;
-    //         }
-    //         link = link+ temp.value;
-    //         return link;
-    //     }
-    //     return null;
-    // }
 }
