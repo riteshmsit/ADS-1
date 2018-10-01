@@ -3,7 +3,7 @@ public class Steque<E>  {
 	E[] steque;
 	int head, tail, capacity;
 	public Steque() {
-		steque = (E[])new Object[3000];
+		steque = (E[])new Object[2000];
 		capacity = 2000;
 		head = 1000;
 		tail = 1000;
@@ -20,7 +20,7 @@ public class Steque<E>  {
 		}
 	}
 	public void deleteBack(E item) {
-		if (tail > head) {
+		if (tail < capacity) {
 			tail--;
 			steque[tail] = null;
 		} 
