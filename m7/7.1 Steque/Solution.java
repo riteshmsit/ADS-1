@@ -19,8 +19,8 @@ class Solution {
 						//obj.print();
 						break;	
 						case "push":
-						obj.pushFront(Integer.parseInt(ins[1]));
-						break;
+							obj.pushFront(Integer.parseInt(ins[1]));
+							break;
 						case "pop":
 						if (obj.isEmpty()) {
 							System.out.println("Steque is empty.");

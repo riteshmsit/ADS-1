@@ -30,15 +30,15 @@ class Steque {
 		size++;
 		display();
 	}
-	public void addLast(int inputitem) {
+	public void addLast(int data) {
 		if (isEmpty()) {
-			pushFront(inputitem);
+			pushFront(data);
 			return;
 		}
 		if (size == 1) {
 			head = tail;
 		}
-		Node newnode = new Node(inputitem);
+		Node newnode = new Node(data);
 		tail.next = newnode;
 		tail = newnode;
 		size++;
