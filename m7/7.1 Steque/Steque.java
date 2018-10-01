@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class Steque {
-	Node left = null;
-	Node right = null;
+	Node head;
+	Node tail;
 	int size = 0;
 	class Node {
 		int  data;
@@ -10,59 +10,59 @@ class Steque {
 			this.data = inputdata;
 		}
 	}
-	boolean isEmpty() {
+	public boolean isEmpty() {
 		return size == 0;
 	}
-	int size() {
+	public int size() {
 		return size;
 	}
-	void pushFront(int inputitem) {
+	public void pushFront(int inputitem) {
 		Node newnode = new Node(inputitem);
 		if (isEmpty()) {
-			left = newnode;
-			right = left;
+			head = newnode;
+			tail = head;
 			size++;
 			display();
 			return;
 		}
-		newnode.next = left;
-		left = newnode;
+		newnode.next = head;
+		tail = newnode;
 		size++;
 		display();
 	}
-	void addLast(int inputitem) {
+	public void addLast(int inputitem) {
 		if (isEmpty()) {
 			pushFront(inputitem);
 			return;
 		}
 		if (size == 1) {
-			left = right;
+			head = tail;
 		}
 		Node newnode = new Node(inputitem);
-		right.next = newnode;
-		right = newnode;
+		tail.next = newnode;
+		tail = newnode;
 		size++;
 		display();
 	}
-	int deleteLast() {
-		int leftout = left.data;
-		left = left.next;
+	public int deleteLast() {
+		int leftout = head.data;
+		head = head.next;
 		size--;
 		display();
 		return leftout;
 	}
-	void display() {
+	public void display() {
 		if (isEmpty()) {
 			System.out.println("Steque is empty.");
 			return;
 		}
 		String str = "";
-		Node test = left;
+		Node test = head;
 		while (test.next != null) {
 			str = str + test.data + ", ";
 			test = test.next;
 		}
-		str = str + right.data;
+		str = str + tail.data;
 		System.out.println(str);
 	}
 }

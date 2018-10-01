@@ -6,13 +6,14 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int nooftestcases = Integer.parseInt(sc.nextLine());
-
-		for (int i = 0; i < nooftestcases; i++) {
+		//for (int i = 0; i < nooftestcases; i++) {
+		int i = 0;
+		while (i < nooftestcases) {
 			Steque obj = new Steque();
 			while (sc.hasNext()) {
-				String line = sc.nextLine();
-				if (!line.isEmpty()) {
-					String[] ins = line.split(" ");
+				String input = sc.nextLine();
+				if (!input.isEmpty()) {
+					String[] ins = input.split(" ");
 					switch(ins[0]) {
 						case "enqueue":
 						obj.addLast(Integer.parseInt(ins[1]));
@@ -35,6 +36,7 @@ class Solution {
 					}
 				} else {
 					System.out.println();
+					i++;
 					break;
 				}
 			}
