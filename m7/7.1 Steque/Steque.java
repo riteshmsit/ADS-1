@@ -3,7 +3,7 @@ public class Steque<E>  {
 	E[] steque;
 	int head, tail, capacity;
 	public Steque() {
-		steque = (E[])new Object[100];
+		steque = (E[])new Object[3000];
 		capacity = 2000;
 		head = 1000;
 		tail = 1000;
