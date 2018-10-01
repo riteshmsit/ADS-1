@@ -3,8 +3,8 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int nooftestcases = Integer.parseInt(sc.nextLine());
-		int i = 0;
-		while (i < nooftestcases) {
+
+		for (int i = 0; i < nooftestcases; i++) {
 			Steque obj = new Steque();
 			while (sc.hasNext()) {
 				String line = sc.nextLine();
@@ -35,7 +35,6 @@ class Solution {
 					break;
 				}
 			}
-			i++;
 		}
 	}
 }
