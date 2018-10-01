@@ -10,9 +10,9 @@ class Solution {
 		//while (i < nooftestcases) {
 			Steque obj = new Steque();
 			while (sc.hasNext()) {
-				String input = sc.nextLine();
-				if (!input.isEmpty()) {
-					String[] ins = input.split(" ");
+				String line = sc.nextLine();
+				if (!line.isEmpty()) {
+					String[] ins = line.split(" ");
 					switch(ins[0]) {
 						case "enqueue":
 						obj.addLast(Integer.parseInt(ins[1]));
