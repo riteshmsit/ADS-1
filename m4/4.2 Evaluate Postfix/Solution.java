@@ -19,8 +19,8 @@ public class Solution<E> {
 		if (size == resize / 4) {
 			resize(size);
 		}
-		//size--;
-		return stack[size--];
+		size--;
+		return stack[size];
 	}
 	public void resize(int resize) {
 		E[] stack1 = (E[])new Object[resize];
