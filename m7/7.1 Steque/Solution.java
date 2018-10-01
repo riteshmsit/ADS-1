@@ -41,7 +41,7 @@ final class Solution {
                         break;
                     }
                 }
+                System.out.println();
         }
-        System.out.println();
     }
 }
