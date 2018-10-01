@@ -20,7 +20,7 @@ public class Steque<E>  {
 		}
 	}
 	public void deleteBack(E item) {
-		if (tail < capacity) {
+		if (tail < head) {
 			tail--;
 			steque[tail] = item;
 		} 
