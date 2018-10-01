@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class Steque {
-	Node head;
-	Node tail;
+	Node head = null;
+	Node tail = null;
 	int size = 0;
 	class Node {
 		int  data;
