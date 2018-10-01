@@ -1,54 +1,66 @@
 import java.util.Scanner;
-public class Steque<E>  {
-	E[] steque;
-	int head, tail, capacity;
-	public Steque() {
-		steque = (E[])new Object[300];
-		capacity = 300;
-		head = 150;
-		tail = 150;
-	}
-	public void pushAtEnd(E item) {
-		if (tail < capacity) {
-			tail++;
-			steque[tail] = item;
+class Steque {
+	Node leftnode = null;
+	Node rightnode = null;
+	int size = 0;
+	class Node {
+		int data;
+		Node next;
+		Node(int inputdata) {
+			this.data = inputdata;
 		}
 	}
-	public void insertFront(E item) {
-		if (head > 0) {
-			head--;
-			steque[head] = item;
-		} else {
-			steque[head++] = item;
-		}
-
+	boolean isEmpty() {
+		return size == 0;
 	}
-	public void deleteBack(E item) {
-		if (!isEmpty() && tail > head) {
-			steque[tail--] = null;
+	int size() {
+		return size;
+	}
+	public void pushAtEnd(int data) {
+		if (isEmpty()) {
+			insertFront(data);
+			return;
+		}
+		if (size == 1) {
+			leftnode = rightnode;
+		}
+		Node newnode = new Node(data);
+		rightnode.next = newnode;
+		rightnode = newnode;
+		size++;
+	}
+	public void insertFront(int data) {
+		Node end = new Node(data);
+		if (isEmpty()) {
+			leftnode = end;
+			rightnode = leftnode;
+			size++;
+			return;
 		} else {
+			end.next = leftnode;
+			leftnode = end;
+			size++;
+			return;
+		}
+	}
+	public int deleteBack(int data) {
+		int leftout = leftnode.data;
+		leftnode = leftnode.next;
+		size--;
+		return leftout;
+	}
+	public void print() {
+		if (isEmpty()) {
 			System.out.println("Steque is empty.");
+			return;
 		}
-	}
-	public int size() {
-		if (head != tail)
-			return tail - head;
-		return 0;
-	}
-	public boolean isEmpty() {
-		return size() == 0;
-	}
-	public String print() {
-		if (!isEmpty()) {
-			String s = "";
-			int i = head;
-			for (i = head; i < tail - 1; i++) {
-				s += steque[i] + ", ";
-			}
-			s += steque[i];
-			return s;
-		} else {
-			return "Steque is empty.";
+		String str = "";
+		Node test = leftnode;
+		while (test.next != null) {
+			str = str + test.data + ", ";
+			test = test.next;
 		}
+		str = str + rightnode.data;
+		System.out.println(str);
 	}
 }

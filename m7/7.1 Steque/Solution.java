@@ -5,7 +5,7 @@ class Solution {
 		int nooftestcases = Integer.parseInt(sc.nextLine());
 		int i = 0;
 		while (i < nooftestcases) {
-			Steque<Integer> obj = new Steque<Integer>();
+			Steque obj = new Steque();
 			while (sc.hasNext()) {
 				String line = sc.nextLine();
 				if (!line.isEmpty()) {
