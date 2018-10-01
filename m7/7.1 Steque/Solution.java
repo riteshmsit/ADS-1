@@ -35,7 +35,7 @@ final class Solution {
                 System.out.println("Steque is empty.");
                 break;
                         } else {
-                            obj.deleteLast();
+                            obj.deleteFirst();
                             break;
                         }
                         default:

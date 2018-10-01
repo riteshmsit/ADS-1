@@ -31,7 +31,7 @@ class Steque {
 		display();
 	}
 	public void addLast(int data) {
-		if (isEmpty()) {
+		if (head == null) {
 			pushFront(data);
 			return;
 		}
@@ -44,7 +44,7 @@ class Steque {
 		size++;
 		display();
 	}
-	public int deleteLast() {
+	public int deleteFirst() {
 		int leftout = head.data;
 		head = head.next;
 		size--;
