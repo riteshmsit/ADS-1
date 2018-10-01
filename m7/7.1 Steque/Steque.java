@@ -18,7 +18,7 @@ class Steque {
 	}
 	public void pushFront(int data) {
 		Node newnode = new Node(data);
-		if (isEmpty()) {
+		if (head == null) {
 			head = newnode;
 			tail = head;
 			size++;
