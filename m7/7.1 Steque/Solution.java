@@ -4,8 +4,9 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		int nooftestcases = Integer.parseInt(sc.nextLine());
 		int i = 0;
-		Steque<Integer> obj = new Steque<Integer>();
+		
 		while (i < nooftestcases) {
+			Steque<Integer> obj = new Steque<Integer>();
 			while (sc.hasNext()) {
 				String[] ins = sc.nextLine().split(" ");
 				switch(ins[0]) {
