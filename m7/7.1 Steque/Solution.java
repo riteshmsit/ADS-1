@@ -1,5 +1,8 @@
 import java.util.Scanner;
 class Solution {
+	Solution() {
+
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int nooftestcases = Integer.parseInt(sc.nextLine());
@@ -9,7 +12,7 @@ class Solution {
 			while (sc.hasNext()) {
 				String line = sc.nextLine();
 				if (!line.isEmpty()) {
-					String[] ins = sc.nextLine().split(" ");
+					String[] ins = line.split(" ");
 					switch(ins[0]) {
 						case "enqueue":
 						obj.addLast(Integer.parseInt(ins[1]));
