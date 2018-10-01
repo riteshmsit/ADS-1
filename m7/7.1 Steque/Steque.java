@@ -3,10 +3,10 @@ public class Steque<E>  {
 	E[] steque;
 	int head, tail, capacity;
 	public Steque() {
-		steque = (E[])new Object[2000];
-		capacity = 2000;
-		head = 1000;
-		tail = 1000;
+		steque = (E[])new Object[30];
+		capacity = 30;
+		head = 15;
+		tail = 15;
 	}
 	public void pushAtEnd(E item) {
 		if (tail < capacity) {
