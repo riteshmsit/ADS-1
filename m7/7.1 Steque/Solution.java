@@ -23,12 +23,18 @@ class Solution {
 						}
 						break;
 						case "pop":
+						if (obj.isEmpty()) {
+							System.out.println("Steque is empty.");
+							break;
+						}
 						obj.deleteBack(Integer.parseInt(ins[1]));
 						obj.print();
 						break;
 						default:
 						break;
 					}
+				} else {
+					System.out.println();
 				}
 				i++;
 			}
