@@ -52,7 +52,7 @@ class Steque {
 		return leftout;
 	}
 	public void display() {
-		if (isEmpty()) {
+		if (head == null) {
 			System.out.println("Steque is empty.");
 			return;
 		}
