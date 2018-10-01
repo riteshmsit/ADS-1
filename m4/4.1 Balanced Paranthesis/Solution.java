@@ -1,132 +1,125 @@
 import java.util.Scanner;
-/**PARENTHESIS.**/
-final class LinkedListStack {
+/**
+ * Class for stringstack.
+ */
+class Stringstack {
     /**
-     * @brief [brief description]
-     * @details [long description]
+     * { var_description }.
      */
-    private Node head;
-    /**node.**/
-    class Node {
+    private Node first = null;
+    /**
+     * Class for node.
+     */
+    private class Node {
         /**
-         * variable.
+         * { var_description }.
          */
-        private char value;
+        private char item;
         /**
-         * variable.
+         * { var_description }.
          */
-        private Node next;
+        private Node nextAddress;
     }
     /**
-     * @brief [brief description]
-     * @details [long description]
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
      */
-    LinkedListStack() {
-        head = null;
+    public char top() {
+        return first.item;
     }
     /**
-     * @brief [brief description]
-     * @details [long description]
-     * @return value
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
      */
+
     public boolean isEmpty() {
-        if (head == null) {
-            return true;
-        }
-        return false;
+        return first == null;
     }
     /**
-     * @brief [brief description]
-     * @details [long description]
-     * @return value
+     * { function_description }.
+     *
+     * @param      item  The item
+     */
+    public void push(final char item) {
+        Node oldfirst = first;
+        first = new Node();
+        first.item = item;
+        first.nextAddress = oldfirst;
+    }
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
      */
     public char pop() {
-        if (head == null) {
-            boolean x;
-        }
-        char value = head.value;
-        head = head.next;
-        return value;
-    }
-    /**
-     * @param value value
-     */
-    public void push(final char value) {
-        Node oldHead = head;
-        head = new Node();
-        head.value = value;
-        head.next = oldHead;
+        char item = first.item;
+        first = first.nextAddress;
+        return item;
     }
 }
-/**balance.**/
-final class Solution {
+/**
+ * Class for solution.
+ */
+public final class Solution {
     /**
-     * @brief [brief description]
-     * @details [long description]
+     * Constructs the object.
      */
-    private Solution() { }
+    private Solution() {
+        /**
+         * { item_description }.
+         */
+
+    }
     /**
-     * @param args value
+     * { function_description }.
+     *
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner s = new Scanner(System.in);
-        String s1 = s.nextLine();
-        int j = 0;
-        int num = Integer.parseInt(s1);
-        while (j < num) {
-        boolean x = balanced(s);
-        if (x) {
-            System.out.println("YES");
-        } else {
-            System.out.println("NO");
-        }
-        j++;
-    }
-
-        }
-        /**.
-         * { function_description }
-         *
-         * @param      s     { parameter_description }
-         *
-         * @return     { description_of_the_return_value }
-         */
-public static boolean balanced(final Scanner s) {
-boolean y = false;
-LinkedListStack stack = new LinkedListStack();
-String s2 = s.nextLine();
-for (int i = 0; i < s2.length(); i++) {
-        char ch = s2.charAt(i);
-            if (ch == '(' || ch == '[' || ch == '{') {
-                stack.push(ch);
-            } else if (stack.isEmpty()) {
-                    y = false;
-                    return y;
-            } else if (ch == ')') {
-                if (stack == null || stack.pop() != '(') {
-                        y = false;
-                        return y;
-                    }
-            } else if (ch == ']') {
-                if (stack == null || stack.pop() != '[') {
-                    y = false;
-                    return y;
-                    }
-            } else if (ch == '}') {
-                if (stack == null || stack.pop() != '{') {
-                    y = false;
-                    return y;
-                    }
-                }
-            }
-            if (stack.isEmpty()) {
-                y = true;
-                return y;
+        Scanner sc = new Scanner(System.in);
+        int size = Integer.parseInt(sc.nextLine());
+        for (int i = 0; i < size; i++) {
+            String line = sc.next();
+            if (parenthesisfile(line)) {
+                System.out.println("YES");
             } else {
-            return y;
-        }
+                System.out.println("NO");
+            }
+
         }
     }
+    /**
+     * { function_description }.
+     *
+     * @param      s     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static boolean parenthesisfile(final String s) {
+        Stringstack obj = new Stringstack();
+        int sLength = s.length();
+        for (int i = 0; i < sLength; i++) {
+            char ch = s.charAt(i);
+            if (ch == '(' || ch == '{' || ch == '[') {
+                obj.push(ch);
+            } else {
+                if (obj.isEmpty()) {
+                    return false;
+                }
+                if (ch == ')' && obj.top() == '(') {
+                obj.pop();
+            } else if (ch == '}' && obj.top() == '{') {
+                obj.pop();
+            } else if (ch == ']' && obj.top() == '[') {
+                obj.pop();
+            } else {
+                return false;
+            }
+        }
 
-
-
+    }
+    return obj.isEmpty();
+}
+}
