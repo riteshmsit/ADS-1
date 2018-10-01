@@ -18,7 +18,6 @@ final class Solution {
         Scanner sc = new Scanner(System.in);
         int nooftestcases = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < nooftestcases; i++) {
-        //while (i < nooftestcases) {
             Steque obj = new Steque();
             while (sc.hasNext()) {
                 String line = sc.nextLine();
