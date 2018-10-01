@@ -25,8 +25,7 @@ public class Steque<E>  {
 	}
 	public void deleteBack(E item) {
 		if (!isEmpty() && tail > head) {
-			tail--;
-			steque[tail] = item;
+			steque[tail--] = null;
 		} else {
 			System.out.println("Steque is empty.");
 		}
