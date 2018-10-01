@@ -37,8 +37,8 @@ class Solution {
 				} else {
 					System.out.println();
 				}
-				i++;
 			}
+			i++;
 		}
 	}
 }
