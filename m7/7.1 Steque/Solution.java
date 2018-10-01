@@ -40,7 +40,7 @@ final class Solution {
                         default:
                         break;
                     }
-                } 
+                }
                     System.out.println();
         }
     }
