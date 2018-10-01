@@ -32,6 +32,7 @@ class Solution {
 					}
 				} else {
 					System.out.println();
+					break;
 				}
 			}
 			i++;
