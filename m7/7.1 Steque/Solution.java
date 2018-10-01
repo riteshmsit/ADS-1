@@ -23,8 +23,8 @@ class Solution {
 							break;
 						case "pop":
 						if (obj.isEmpty()) {
-						System.out.println("Steque is empty.");
-						break;
+				System.out.println("Steque is empty.");
+				break;
 						} else {
 							obj.deleteLast();
 							//obj.print();
