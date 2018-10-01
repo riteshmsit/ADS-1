@@ -22,6 +22,7 @@ class Solution {
 					break;
 					case "pop":
 					obj.deleteBack(Integer.parseInt(ins[1]));
+					obj.print();
 					break;
 					default:
 					break;

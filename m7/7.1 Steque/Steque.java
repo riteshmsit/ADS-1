@@ -20,8 +20,12 @@ public class Steque<E>  {
 		}
 	}
 	public void deleteBack(E item) {
+		if (!isEmpty()) {
 		tail--;
 		steque[tail] = item;
+		} else {
+			System.out.println("Steque is empty.");
+		}
 
 	}
 	public int size() {
