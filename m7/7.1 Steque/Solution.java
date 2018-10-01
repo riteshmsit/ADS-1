@@ -1,9 +1,12 @@
 import java.util.Scanner;
 class Solution {
-	Solution() {
+	/**.
+	 * Constructs the object.
+	 */
+	private Solution() {
 
 	}
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int nooftestcases = Integer.parseInt(sc.nextLine());
 		for (int i = 0; i < nooftestcases; i++) {
@@ -13,11 +16,10 @@ class Solution {
 				String line = sc.nextLine();
 				if (!line.isEmpty()) {
 					String[] ins = line.split(" ");
-					switch(ins[0]) {
+					switch (ins[0]) {
 						case "enqueue":
-						obj.addLast(Integer.parseInt(ins[1]));
-						//obj.print();
-						break;	
+					obj.addLast(Integer.parseInt(ins[1]));
+						break;
 						case "push":
 					obj.pushFront(Integer.parseInt(ins[1]));
 					break;
@@ -27,7 +29,6 @@ class Solution {
 				break;
 						} else {
 							obj.deleteLast();
-							//obj.print();
 							break;
 						}
 						default:
