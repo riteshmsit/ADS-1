@@ -22,6 +22,8 @@ public class Steque<E>  {
 		if (tail > head) {
 			tail--;
 			steque[tail] = null;
+		} else {
+			System.out.println("Steque is empty.");
 		}
 	}
 }
