@@ -21,7 +21,6 @@ final class Solution {
             Steque obj = new Steque();
             while (sc.hasNext()) {
                 String line = sc.nextLine();
-                if (!line.isEmpty()) {
                     String[] ins = line.split(" ");
                     switch (ins[0]) {
                         case "enqueue":
@@ -41,11 +40,8 @@ final class Solution {
                         default:
                         break;
                     }
-                } else {
+                } 
                     System.out.println();
-                    break;
-                }
-            }
         }
     }
 }
