@@ -26,10 +26,11 @@ class Solution {
 						if (obj.isEmpty()) {
 							System.out.println("Steque is empty.");
 							break;
-						}
+						} else {
 						obj.deleteBack(Integer.parseInt(ins[1]));
 						obj.print();
 						break;
+						}
 						default:
 						break;
 					}
