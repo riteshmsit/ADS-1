@@ -16,7 +16,11 @@ class Solution {
 					obj.insertFront(Integer.parseInt(ins[1]));
 					break;
 					case "pop":
+					if (obj.isEmpty()) {
+						System.out.println("Steque is empty.");
+					} else {
 					obj.deleteBack(Integer.parseInt(ins[1]));
+					}
 					break;
 					default:
 					break;

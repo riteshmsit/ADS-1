@@ -23,8 +23,14 @@ public class Steque<E>  {
 		if (tail > head) {
 			tail--;
 			steque[tail] = null;
-		} else {
-			System.out.println("Steque is empty.");
-		}
+		} 
+	}
+	public int size() {
+		if (head != tail)
+			return tail - head;
+		return 0;
+	}
+	public boolean isEmpty() {
+		return size() == 0;
 	}
 }
