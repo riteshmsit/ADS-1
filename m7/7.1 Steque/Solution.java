@@ -11,16 +11,17 @@ class Solution {
 				switch(ins[0]) {
 					case "enqueue":
 					obj.pushAtEnd(Integer.parseInt(ins[1]));
+					obj.print();
 					break;	
 					case "push":
 					obj.insertFront(Integer.parseInt(ins[1]));
+					int j = 0;
+					if (j > 0) {
+						obj.print();
+					}
 					break;
 					case "pop":
-					if (obj.isEmpty()) {
-						System.out.println("Steque is empty.");
-					} else {
 					obj.deleteBack(Integer.parseInt(ins[1]));
-					}
 					break;
 					default:
 					break;
