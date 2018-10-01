@@ -24,7 +24,7 @@ class Solution {
 							break;
 						} else {
 							obj.deleteBack(Integer.parseInt(ins[1]));
-							obj.print();
+							//obj.print();
 							break;
 						}
 						default:

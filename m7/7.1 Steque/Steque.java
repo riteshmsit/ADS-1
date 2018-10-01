@@ -47,6 +47,7 @@ class Steque {
 		int leftout = leftnode.data;
 		leftnode = leftnode.next;
 		size--;
+		print();
 		return leftout;
 	}
 	public void print() {
