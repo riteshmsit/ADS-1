@@ -12,18 +12,18 @@ class Solution {
 					String[] ins = sc.nextLine().split(" ");
 					switch(ins[0]) {
 						case "enqueue":
-						obj.pushAtEnd(Integer.parseInt(ins[1]));
-						obj.print();
+						obj.addLast(Integer.parseInt(ins[1]));
+						//obj.print();
 						break;	
 						case "push":
-						obj.insertFront(Integer.parseInt(ins[1]));
+						obj.pushFront(Integer.parseInt(ins[1]));
 						break;
 						case "pop":
 						if (obj.isEmpty()) {
 							System.out.println("Steque is empty.");
 							break;
 						} else {
-							obj.deleteBack(Integer.parseInt(ins[1]));
+							obj.deleteLast();
 							//obj.print();
 							break;
 						}
