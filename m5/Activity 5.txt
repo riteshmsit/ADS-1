@@ -1,0 +1,1 @@
+Initially elements are pushed into the stack. Later after popping them from the stack, they are enqued to the queue in reverse order.

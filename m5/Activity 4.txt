@@ -1,0 +1,9 @@
+Solution:
+(a)0 1 2 3 4 5 6 7 8 9
+It is Possible because after every enque of an element, we are dequing it immediately
+(b)4 6 8 7 5 3 2 9 0 1 
+It is not possible because we have enqued till 4 before a deque operation. So first deque element would be 0. But given is 4
+(c)2 5 6 7 4 8 9 3 1 0
+It is not possible because we have enqued till 2 before a deque operation. So first deque element would be 0. But given is 2
+(d)4 3 2 1 0 5 6 7 8 9
+It is not possible because we have enqued till 4 before a deque operation. So first deque element would be 0. But given is 4

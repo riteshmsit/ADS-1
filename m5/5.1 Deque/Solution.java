@@ -18,7 +18,6 @@ final class Solution {
         int j = 0;
         while (j < num) {
         String[] tokens = s.nextLine().split(" ");
-        //System.out.println(tokens[0] + "  " + tokens[1]);
             switch (tokens[0]) {
                 case "pushLeft" :
                     dequeue.addFirst(Integer.parseInt(tokens[1]));
@@ -36,7 +35,6 @@ final class Solution {
                         } else {
                             System.out.println("Deck is empty");
                             }
-                                //System.out.println(linklist);
                             break;
                 case "popRight":
                         if (!dequeue.isempty()) {
