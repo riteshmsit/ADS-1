@@ -20,10 +20,9 @@ public class Steque<E>  {
 		}
 	}
 	public void deleteBack(E item) {
-		if (tail < head) {
-			tail--;
-			steque[tail] = item;
-		} 
+		tail--;
+		steque[tail] = item;
+
 	}
 	public int size() {
 		if (head != tail)
