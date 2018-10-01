@@ -6,9 +6,8 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int nooftestcases = Integer.parseInt(sc.nextLine());
-		//for (int i = 0; i < nooftestcases; i++) {
-		int i = 0;
-		while (i < nooftestcases) {
+		for (int i = 0; i < nooftestcases; i++) {
+		//while (i < nooftestcases) {
 			Steque obj = new Steque();
 			while (sc.hasNext()) {
 				String input = sc.nextLine();
@@ -36,7 +35,6 @@ class Solution {
 					}
 				} else {
 					System.out.println();
-					i++;
 					break;
 				}
 			}
