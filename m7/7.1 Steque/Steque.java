@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Steque<E>  {
 	E[] steque;
 	int head, tail, capacity;
@@ -13,7 +14,7 @@ public class Steque<E>  {
 		}
 	}
 	public void insertFront(E item) {
-		if (head >= 0) {
+		if (head > 0) {
 			head--;
 			steque[head] = item;
 		}
