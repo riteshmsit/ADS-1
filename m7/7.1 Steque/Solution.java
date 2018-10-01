@@ -17,10 +17,6 @@ class Solution {
 						break;	
 						case "push":
 						obj.insertFront(Integer.parseInt(ins[1]));
-						int j = 0;
-						if (j > 0) {
-							obj.print();
-						}
 						break;
 						case "pop":
 						if (obj.isEmpty()) {
