@@ -10,14 +10,18 @@ public class Steque<E>  {
 	}
 	public void pushAtEnd(E item) {
 		if (tail < capacity) {
-			steque[tail++] = item;
+			tail++;
+			steque[tail] = item;
 		}
 	}
 	public void insertFront(E item) {
 		if (head > 0) {
 			head--;
 			steque[head] = item;
+		} else {
+			steque[head++] = item;
 		}
+
 	}
 	public void deleteBack(E item) {
 		if (!isEmpty() && tail > head) {
