@@ -16,6 +16,11 @@ class Steque {
 	public int size() {
 		return size;
 	}
+	/**.
+	 * The time complexity is 1 as it is called once and the element is also added only once.
+	 *
+	 * @param      data  The data
+	 */
 	public void pushFront(int data) {
 		Node newnode = new Node(data);
 		if (head == null) {
@@ -30,6 +35,11 @@ class Steque {
 		size++;
 		display();
 	}
+	/**.
+	 * The time complexity is 1 as it is called once and the element is also added only once.
+	 *
+	 * @param      data  The data
+	 */
 	public void addLast(int data) {
 		if (head == null) {
 			pushFront(data);
@@ -44,13 +54,18 @@ class Steque {
 		size++;
 		display();
 	}
-	public int deleteFirst() {
-		int leftout = head.data;
+	/**.The time complexity is 1 as element is deleted once.
+	 * { function_description }
+	 */
+	public void deleteFirst() {
+		if (head != null)
 		head = head.next;
 		size--;
 		display();
-		return leftout;
 	}
+	/**. The time complexity is N as elements are displayed till the length of the linked list. 
+	 * { function_description }
+	 */
 	public void display() {
 		if (head == null) {
 			System.out.println("Steque is empty.");

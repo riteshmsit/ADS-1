@@ -11,7 +11,7 @@ final class Solution {
     }
     /**.
      * { function_description }
-     *
+     *The time complexity is N^2 as there are two loops and one loop is nested inside the other loop.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -31,13 +31,7 @@ final class Solution {
                     obj.pushFront(Integer.parseInt(ins[1]));
                     break;
                         case "pop":
-                        if (obj.isEmpty()) {
-                System.out.println("Steque is empty.");
-                break;
-                        } else {
-                            obj.deleteFirst();
-                            break;
-                        }
+                        obj.deleteFirst();
                         default:
                         break;
                     }
