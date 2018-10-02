@@ -7,22 +7,22 @@ class Insertionsort {
         for (int i = 0; i < teamsize - 1; i++) { 
             int j = i;
             while(j > 0) {
-                if (a[j].getWins() > a[max].getWins()) {
-                    Team t = a[max];
-                    a[max] = a[i];
-                    a[i] = t;
-                } else if (a[j].getWins() == a[max].getWins()) {
-                    if (a[j].getLosses() < a[max].getLosses()) { 
+                if (a[j - 1].getWins() > a[j].getWins()) {
+                    Team t = a[j];
+                    a[j] = a[j - 1];
+                    a[j - 1] = t;
+                } else if (a[j - 1].getWins() == a[j].getWins()) {
+                    if (a[j - 1].getLosses() < a[j].getLosses()) { 
                         //max = j;
-                        Team t = a[max];
-                    a[max] = a[i];
-                    a[i] = t;
-                    }  else if (a[j].getLosses() == a[max].getLosses()) {
-                        if (a[j].getDraws() > a[max].getDraws()) {
+                        Team t = a[j];
+                        a[j] = a[j - 1];
+                        a[j - 1] = t;
+                    }  else if (a[j - 1].getLosses() == a[j].getLosses()) {
+                        if (a[j - 1].getDraws() > a[j].getDraws()) {
                             //max = j;
-                            Team t = a[max];
-                    a[max] = a[i];
-                    a[i] = t;
+                            Team t = a[j];
+                    a[j] = a[j - 1];
+                    a[j] = t;
                         }
                     }
                 }
