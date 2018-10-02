@@ -12,7 +12,7 @@ class Selectionsort {
                 if (a[j].getWins() > a[max].getWins()) {
                     max = j;
                 } else if (a[j].getWins() == a[max].getWins()) {
-                    if (a[j].getLosses() < a[max].getLosses() && a[j].getLosses() != a[max].getLosses()) {
+                    if (a[j].getLosses() < a[max].getLosses()) { //&& a[j].getLosses() != a[max].getLosses()) {
                         max = j;
                     } else if (a[j].getDraws() > a[max].getDraws()) {
                         max = j;
