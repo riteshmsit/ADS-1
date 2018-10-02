@@ -8,7 +8,7 @@ class Selectionsort {
         String s = "";
         for (int i = 0; i < teamsize - 1; i++) { 
             max = i; 
-            for (int j = i + 1; j < n; j++) {
+            for (int j = i + 1; j < teamsize; j++) {
                 if (a[j].getWins() > a[max].getWins()) {
                     max = j;
                 } else if (a[j].getWins() == a[max].getWins()) {
@@ -23,7 +23,7 @@ class Selectionsort {
             String s2 = a[i].getTeam();
             exchange(s1,s2);
         }
-        displayToString(a);
+        displayToString(a, teamsize);
     }
     public void display(int teamsize, Team[] a) {
         System.out.println(a[teamsize].getTeam());
@@ -33,10 +33,10 @@ class Selectionsort {
         s1 = s2;
         s2 = temp;
     }
-    public void displayToString(Team[] a) {
+    public void displayToString(Team[] a, int teamsize) {
         String s = "";
         int i;
-        for (i = 0; i < a.length - 1; i++) {
+        for (i = 0; i <  teamsize - 1; i++) {
             s += a[i].getTeam() + ",";
         }
             s += a[i].getTeam();
