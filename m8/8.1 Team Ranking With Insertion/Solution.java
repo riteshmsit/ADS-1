@@ -1,23 +1,39 @@
-import java.util.*;
-class Solution {
-	private Solution() {
+/**.
+ * { item_description }
+ */
+import java.util.Scanner;
+/**.
+ * { item_description }
+ */
+public final class Solution {
+    /**.
+     * Constructs the object.
+     */
+    private Solution() {
+        /**.
+         * { item_description }
+         */
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    // time complexity for the main method is N
+    // Because there is one while loop.
+    // while loop iterates until it has next line i.e N times.
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Sorting sort = new Sorting();
 
-	}
-	private static Team[] team = new Team[20];
-	private static int teamsize = 0;
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		//Team obj = new Team();
-		Selectionsort obj1 = new Selectionsort();
-		while (sc.hasNextLine()) {
-			String[] input = sc.nextLine().split(",");
-			team[teamsize++] = new Team(input[0], Integer.parseInt(input[1]), Integer.parseInt(input[2]), Integer.parseInt(input[3]));
-		}
-		//if (teamsize > 2) {
-		obj1.sortByInsertion(team,teamsize);
-		// } else {
-		// 	obj1.display(teamsize, team);
-		// }
-	}
+        while (sc.hasNext()) {
+            String line = sc.nextLine();
+            String[] tokens = line.split(",");
+            Team team = new Team(tokens[0], Integer.parseInt(tokens[1]),
+             Integer.parseInt(tokens[2]), Integer.parseInt(tokens[2 + 1]));
+            sort.add(team);
+        }
+        sort.insertion();
+        System.out.println(sort.toString());
+    }
 }
-
