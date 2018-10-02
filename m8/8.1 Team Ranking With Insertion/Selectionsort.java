@@ -3,10 +3,10 @@ class Selectionsort {
 
     }
     public void sortByInsertion(Team[] a, int teamsize) {
-        int n = a.length;
+        //int n = a.length;
         int max = 0;
         String s = "";
-        for (int i = 0; i < teamsize - 1; i++) { 
+        for (int i = 0; i < teamsize; i++) { 
             max = i; 
             for (int j = i + 1; j < teamsize; j++) {
                 if (a[j].getWins() > a[max].getWins()) {
@@ -14,7 +14,6 @@ class Selectionsort {
                 } else if (a[j].getWins() == a[max].getWins()) {
                     if (a[j].getLosses() < a[max].getLosses()) { 
                         max = j;
-
                     } else if (a[j].getLosses() == a[max].getLosses()) {
                         if (a[j].getDraws() > a[max].getDraws())
                         max = j;
@@ -23,13 +22,11 @@ class Selectionsort {
             }
             String s1 = a[max].getTeam();
             String s2 = a[i].getTeam();
-            exchange(s1,s2);
+            a[max].setTeam(s2);
+            a[i].setTeam(s1);
         }
         displayToString(a, teamsize);
     }
-    // public void display(int teamsize, Team[] a) {
-    //     System.out.println("England");
-    // }
     public void exchange(String s1, String s2) {
         String temp = s1;
         s1 = s2;

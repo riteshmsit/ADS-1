@@ -19,4 +19,8 @@ class Team {
 	public int getDraws() {
 		return this.draws;
 	}
+	public String setTeam(String s) {
+		this.team = s;
+		return this.team;
+	}
 }
