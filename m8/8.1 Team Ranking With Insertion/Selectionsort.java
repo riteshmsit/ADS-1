@@ -11,10 +11,12 @@ class Selectionsort {
             for (int j = i + 1; j < teamsize; j++) {
                 if (a[j].getWins() > a[max].getWins()) {
                     max = j;
-                } else {//if (a[j].getWins() == a[max].getWins()) 
-                    if (a[j].getLosses() < a[max].getLosses()) { //&& a[j].getLosses() != a[max].getLosses()) {
+                } else if (a[j].getWins() == a[max].getWins()) {
+                    if (a[j].getLosses() < a[max].getLosses()) { 
                         max = j;
-                    } else if (a[j].getDraws() > a[max].getDraws()) {
+
+                    } else if (a[j].getLosses() == a[max].getLosses()) {
+                        if (a[j].getDraws() > a[max].getDraws())
                         max = j;
                     }
                 }
