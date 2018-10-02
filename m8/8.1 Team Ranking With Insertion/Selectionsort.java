@@ -25,9 +25,9 @@ class Selectionsort {
         }
         displayToString(a, teamsize);
     }
-    public void display(int teamsize, Team[] a) {
-        System.out.println("England");
-    }
+    // public void display(int teamsize, Team[] a) {
+    //     System.out.println("England");
+    // }
     public void exchange(String s1, String s2) {
         String temp = s1;
         s1 = s2;
