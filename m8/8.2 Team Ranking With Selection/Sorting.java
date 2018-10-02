@@ -13,7 +13,12 @@ class Sorting {
 	}
 	public int size() {
 		return size;
-	}
+	}                        
+
+
+
+
+
 // time complexity for this method is O(N^2).
 // In first for loop and second loop it iterates through the size of array
 	public void insertion() {
