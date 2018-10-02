@@ -11,7 +11,7 @@ class Selectionsort {
             for (int j = i + 1; j < teamsize; j++) {
                 if (a[j].getWins() > a[max].getWins()) {
                     max = j;
-                } else if (a[j].getWins() == a[max].getWins()) {
+                } else {//if (a[j].getWins() == a[max].getWins()) 
                     if (a[j].getLosses() < a[max].getLosses()) { //&& a[j].getLosses() != a[max].getLosses()) {
                         max = j;
                     } else if (a[j].getDraws() > a[max].getDraws()) {
