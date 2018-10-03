@@ -2,13 +2,18 @@ import java.util.Scanner;
 /**.
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**.
      * Constructs the object.
      */
     private Solution() {
 
     }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Merge m = new Merge();
         Scanner s = new Scanner(System.in);
