@@ -1,6 +1,9 @@
 import java.util.Scanner;
+/**.
+ * Class for solution.
+ */
 class Solution {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Merge m = new Merge();
         Scanner s = new Scanner(System.in);
         while (s.hasNextLine()) {
@@ -9,7 +12,8 @@ class Solution {
             m.sort(lines);
             System.out.println(m.show(lines));
             System.out.println();
-
         }
     }
 }
+
+
