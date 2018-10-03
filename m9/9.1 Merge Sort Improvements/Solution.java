@@ -3,6 +3,12 @@ import java.util.Scanner;
  * Class for solution.
  */
 class Solution {
+    /**.
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
     public static void main(final String[] args) {
         Merge m = new Merge();
         Scanner s = new Scanner(System.in);
