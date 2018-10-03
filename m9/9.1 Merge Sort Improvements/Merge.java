@@ -5,7 +5,6 @@ class Merge {
     Merge() { 
 
     }
-
     private static void merge(Comparable[] array, Comparable[] newarray, int lo, int mid, int hi) {
         assert isSorted(array, lo, mid);
         assert isSorted(array, mid+1, hi);
