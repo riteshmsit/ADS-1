@@ -8,7 +8,6 @@ class Merge {
     private static void merge(Comparable[] array, Comparable[] newarray, int lo, int mid, int hi) {
         assert isSorted(array, lo, mid);
         assert isSorted(array, mid+1, hi);
-
         int i = lo, j = mid+1;
         for (int k = lo; k <= hi; k++) {
             if (i > mid) {
