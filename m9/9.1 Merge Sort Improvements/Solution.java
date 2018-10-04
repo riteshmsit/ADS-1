@@ -1,30 +1,47 @@
+/**.
+ * { item_description }
+ */
 import java.util.Scanner;
 /**.
- * Class for solution.
+ * { item_description }
  */
-final class Solution {
+public final class Solution {
     /**.
      * Constructs the object.
      */
     private Solution() {
-
+        /**.
+         * { item_description }
+         */
     }
     /**.
      * { function_description }
      *
      * @param      args  The arguments
      */
+    // time complexity for the main method is N
+    // Because there is one while loop.
+    // while loop iterates until it has next line i.e N times.
     public static void main(final String[] args) {
-        Merge m = new Merge();
-        Scanner s = new Scanner(System.in);
-        while (s.hasNextLine()) {
-            String tokens = s.nextLine();
-            String[] lines = tokens.split(",");
-            m.sort(lines);
-            System.out.println(m.show(lines));
+        Scanner sc = new Scanner(System.in);
+        Sorting sort = new Sorting();
+        while (sc.hasNext()) {
+            String line = sc.nextLine();
+            String[] tokens = line.split(",");
+            // int[] arr = new int[tokens.length];
+            sort.sort(tokens);
+            System.out.println(sort.toString(tokens));
             System.out.println();
         }
     }
 }
+
+
+
+
+
+
+
+
 
 
