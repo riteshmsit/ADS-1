@@ -157,7 +157,7 @@ class Linkedlist {
         }
         Node temp = reverseRecursive(head.next);
         head.next.next = head;
-        head.next = null;
+        //head.next = null;
         return temp;
     }
 // time complexity is O(1)
