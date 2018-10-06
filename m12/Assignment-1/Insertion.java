@@ -62,28 +62,37 @@ class Insertion {
     }
     public String displaywithreservation(Students[] a,int size,Students[] overall,int overallsize) {
         int j = overall[0].getvacancies();
-        int q = overall[0].getunresvacancies();
         int b = overall[0].getbcvacancies();
+        int q = overall[0].getunresvacancies();
         int c = overall[0].getscvacancies();
         int d = overall[0].getstvacancies();
         String s = "";
         int i;
-        for (i = 0; i < j - 1; i++) {
+        for (i = 0; i < q; i++) {
+            if (a[i].getreservation().equals("BC")) {
+                b--;
+            } else if (a[i].getreservation().equals("SC")) {
+                c--;
+            } else if (a[i].getreservation().equals("ST")) {
+                d--;
+            } 
             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-        } 
-        s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation();
-        //for (int k = i; k < )
+        }
+        while (q != 0 && i < j) {
+                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+                q--;
+                i++;
+            }
+            if (b != 0 && i < j) {
+                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+                b--;
+                i++;
+            }
+            if (c != 0 && i < j) {
+                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+                c--;
+                i++;
+            }
         return s;
-        // int k;
-        // for (k = i; k < ; k++) {
-        //     s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation() + "\n";
-        // }
-        // for (int l = i; k < ; k++) {
-        //     s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation() + "\n";
-        // }
-        // }
-        // s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation();
-        // int k;
-        // int a = overall[0].get
     }
 }
