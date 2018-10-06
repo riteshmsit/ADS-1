@@ -69,29 +69,57 @@ class Insertion {
         String s = "";
         int i;
         for (i = 0; i < q; i++) {
+        //     if (a[i].getreservation().equals("BC")) {
+        //         b--;
+        //     } else if (a[i].getreservation().equals("SC")) {
+        //         c--;
+        //     } else if (a[i].getreservation().equals("ST")) {
+        //         d--;
+        //     }
+             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+        // }
+        //i--;
+        }
+        while (b != 0 && b > 0) {
             if (a[i].getreservation().equals("BC")) {
-                b--;
-            } else if (a[i].getreservation().equals("SC")) {
-                c--;
-            } else if (a[i].getreservation().equals("ST")) {
-                d--;
-            } 
             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+            b--;
+            i++;
+        } else {
+            i++;
         }
-        while (b != 0 && b > 0 && i < j) {
-                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-                b--;
-                i++;
         }
-        while (c != 0 && c > 0 && i < j) {
-                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-                c--;
-                i++;
-        }
-        while (d != 0 && d > 0 && i < j) {
+        //i = q;
+        //i--;
+        
+        //i--;
+        // while (c != 0 && c > 0) {
+        //     if (a[i].getreservation().equals("SC")) {
+        //         s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+        //         c--;
+        //         i++;
+        //     } else {
+        //     i++;
+        // }
+        //}
+        //i = q;
+        while (d != 0 && d > 0) {
+            if (a[i].getreservation().equals("ST")) {
                 s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
                 d--;
                 i++;
+            } else {
+                i++;
+            }
+        }
+        while (c != 0 && c > 0) {
+            if (a[i].getreservation().equals("SC")) {
+                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+                c--;
+                i++;
+            } else {
+            i++;
+        }
         }
         return s;
     }
