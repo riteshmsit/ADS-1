@@ -28,7 +28,6 @@ class Insertion {
                                     Students t = a[j];
                                     a[j] = a[j - 1];
                                     a[j] = t;
-
                                 } else if (Integer.parseInt(s1[2]) == Integer.parseInt(s2[2])) {
                                     if (Integer.parseInt(s1[1]) > Integer.parseInt(s2[1])) {
                                         Students t = a[j];
@@ -55,33 +54,32 @@ class Insertion {
     public String displayToString(Students[] a, int size) {
         String s = "";
         int i;
-        for (i = 0; i <  size; i++) {
-            s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-        }
-        //s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation();
-        return s;   
-    }
-    public String displaywithreservation(Students[] a,int size,Students[] overall,int overallsize) {
-        String s = "";
-        int i;
         for (i = 0; i <  size - 1; i++) {
             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
         }
         s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation();
+        return s;   
+    }
+    public String displaywithreservation(Students[] a,int size,Students[] overall,int overallsize) {
+        int j = overall[0].getvacancies();
+        int q = overall[0].getunresvacancies();
+        int b = overall[0].getbcvacancies();
+        int c = overall[0].getscvacancies();
+        int d = overall[0].getstvacancies();
+        String s = "";
+        int i;
+        for (i = 0; i < j; i++) {
+            s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation() + "\n";
+        }
+        //for (int k = i; k < )
         return s;
-        // int j = overall[0].getvacancies();
-        // int a = overall[0].unresvacancies();
-        // int b = overall[0].bcvacancies();
-        // int c = overall[0].scvacancies();
-        // int d = overall[0].stvacancies();
-        // //divya,99,ST
-        // String s = "";
-        // int i;
-        // for (i = 0; i < j - 1; i++) {
-        //     for (int a1 = 0; i < a; i++) {
-        //         s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation() + "\n";
-        //     }
-        //     for (int b1 = 0; b1 <)
+        // int k;
+        // for (k = i; k < ; k++) {
+        //     s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation() + "\n";
+        // }
+        // for (int l = i; k < ; k++) {
+        //     s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation() + "\n";
+        // }
         // }
         // s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation();
         // int k;
