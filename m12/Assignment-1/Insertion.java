@@ -80,6 +80,7 @@ class Insertion {
         // }
         //i--;
         }
+        i = q;
         while (b != 0 && b > 0) {
             if (a[i].getreservation().equals("BC")) {
             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";

@@ -208,7 +208,7 @@ Tanya,66,BC
 Abhishek,60,BC
 
 Exception in thread "main" java.lang.NullPointerException
-	at Insertion.displaywithreservation(Insertion.java:107)
+	at Insertion.displaywithreservation(Insertion.java:108)
 	at Insertion.sortByInsertion(Insertion.java:52)
 	at Solution.main(Solution.java:26)
 ----------------------------------------
@@ -291,7 +291,7 @@ Shreya,23,Open
 shyam,23,Open
 
 Exception in thread "main" java.lang.NullPointerException
-	at Insertion.displaywithreservation(Insertion.java:84)
+	at Insertion.displaywithreservation(Insertion.java:85)
 	at Insertion.sortByInsertion(Insertion.java:52)
 	at Solution.main(Solution.java:26)
 ----------------------------------------
@@ -376,7 +376,7 @@ Manoj,32,SC
 Shreya,23,SC
 
 Exception in thread "main" java.lang.NullPointerException
-	at Insertion.displaywithreservation(Insertion.java:84)
+	at Insertion.displaywithreservation(Insertion.java:85)
 	at Insertion.sortByInsertion(Insertion.java:52)
 	at Solution.main(Solution.java:26)
 ----------------------------------------
