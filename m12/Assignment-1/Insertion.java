@@ -68,9 +68,10 @@ class Insertion {
         int d = overall[0].getstvacancies();
         String s = "";
         int i;
-        for (i = 0; i < j; i++) {
-            s += a[i].getname() + a[i].gettotalmarks() + a[i].getreservation() + "\n";
-        }
+        for (i = 0; i < j - 1; i++) {
+            s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+        } 
+        s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation();
         //for (int k = i; k < )
         return s;
         // int k;
