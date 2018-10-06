@@ -80,8 +80,8 @@ class Insertion {
         // }
         //i--;
         }
-        i = q;
-        while (b != 0 && b > 0) {
+        //int j = i;
+        while (b != 0 && b > 0 && i < size) {
             if (a[i].getreservation().equals("BC")) {
             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
             b--;
@@ -105,12 +105,12 @@ class Insertion {
         //}
         //i = q;
         while (d != 0 && d > 0) {
-            if (a[i].getreservation().equals("ST")) {
-                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+            if (a[j].getreservation().equals("ST")) {
+                s += a[j].getname() + "," + a[j].gettotalmarks() + "," + a[j].getreservation() + "\n";
                 d--;
-                i++;
+                j++;
             } else {
-                i++;
+                j++;
             }
         }
         while (c != 0 && c > 0) {
