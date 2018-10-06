@@ -78,21 +78,21 @@ class Insertion {
             } 
             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
         }
-        while (q != 0 && i < j) {
-                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-                q--;
-                i++;
-            }
-            if (b != 0 && i < j) {
+        while (b != 0 && b > 0 && i < j) {
                 s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
                 b--;
                 i++;
-            }
-            if (c != 0 && i < j) {
+        }
+        while (c != 0 && c > 0 && i < j) {
                 s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
                 c--;
                 i++;
-            }
+        }
+        while (d != 0 && d > 0 && i < j) {
+                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+                d--;
+                i++;
+        }
         return s;
     }
 }
