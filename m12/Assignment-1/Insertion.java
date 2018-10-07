@@ -58,7 +58,7 @@ class Insertion {
             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
         }
         s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation();
-        return s;   
+        return s;
     }
     public String displaywithreservation(Students[] a,int size,Students[] overall,int overallsize) {
         int j = overall[0].getvacancies();
@@ -66,6 +66,7 @@ class Insertion {
         int q = overall[0].getunresvacancies();
         int c = overall[0].getscvacancies();
         int d = overall[0].getstvacancies();
+        int count = 0;
         String s = "";
         int i;
         for (i = 0; i < q; i++) {
@@ -76,16 +77,18 @@ class Insertion {
         //     } else if (a[i].getreservation().equals("ST")) {
         //         d--;
         //     }
-             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+            s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
         // }
         //i--;
         }
         //int j = i;
-        while (b != 0 && b > 0 && i < size) {
+        //i = q;
+        while (b != 0 && b > 0) {
             if (a[i].getreservation().equals("BC")) {
             s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
             b--;
             i++;
+            count++;
         } else {
             i++;
         }
@@ -105,12 +108,13 @@ class Insertion {
         //}
         //i = q;
         while (d != 0 && d > 0) {
-            if (a[j].getreservation().equals("ST")) {
-                s += a[j].getname() + "," + a[j].gettotalmarks() + "," + a[j].getreservation() + "\n";
+            if (a[i].getreservation().equals("ST")) {
+                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
                 d--;
-                j++;
+                i++;
+                count++;
             } else {
-                j++;
+                i++;
             }
         }
         while (c != 0 && c > 0) {
@@ -118,9 +122,24 @@ class Insertion {
                 s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
                 c--;
                 i++;
+                count++;
             } else {
             i++;
         }
+        }
+        int x = b + c + d;
+        i = q;
+        if (count == 0) {
+            while ((x) > 0) {
+                if (a[i].getreservation().equals("Open")) {
+                    s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+                    x--;
+                    i++;
+
+                } else {
+                    i++;
+                }
+            }
         }
         return s;
     }
