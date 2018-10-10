@@ -1,0 +1,7 @@
+Starting audit...
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m14\14.2 student reservation system\Students.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m14\14.2 student reservation system\Students.java:5:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m14\14.2 student reservation system\Students.java:6:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m14\14.2 student reservation system\Students.java:18: Line is longer than 80 characters (found 141). [LineLength]
+Audit done.
+Checkstyle ends with 4 errors.
