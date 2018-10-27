@@ -69,7 +69,12 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
      * @return [description]
      */
     public Value get(Studentdetails key) {
-        return get(root, key);
+        if (key.getchoice() == 1) {
+            return get(root, key);
+        } else if (key.getchoice() == 2) {
+            return get(root, key);
+        }
+        return null;
     }
     /**
      * @brief [brief description]
@@ -98,7 +103,6 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         else {
         	return x.value;
         }
-
     }
 }
     

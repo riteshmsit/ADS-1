@@ -2,18 +2,20 @@ class Studentdetails {
 	int rollnumber;
 	String name;
 	double marks;
+	int choice;
 	Studentdetails() {
 
-	}
-	Studentdetails(int rollnumber, String name, double marks) {
-		this.rollnumber = rollnumber;
-		this.name = name;
-		this.marks = marks;
 	}
 	Studentdetails(int rollnumber, String name) {
 		this.rollnumber = rollnumber;
 		this.name = name;
+
 	}
+	Studentdetails(int rollnumber, int choice) {
+		this.rollnumber = rollnumber;
+		this.choice = choice;
+	}
+
 	public int getrollnumber() {
 		return this.rollnumber;
 	}
@@ -23,10 +25,18 @@ class Studentdetails {
 	public double getmarks() {
 		return this.marks;
 	}
+	public int getchoice() {
+		return this.choice;
+	}
 	public int compareTo(Studentdetails that) {
 		if(this.getrollnumber() > that.getrollnumber()) {
 			return 1;
 		} else if(this.getrollnumber() < that.getrollnumber()) {
+			return -1;
+		} else if (this.getmarks() > that.getmarks()){
+			return 1;
+		}
+		else if (this.getmarks() < that.getmarks()) {
 			return -1;
 		} else {
 			return 0;

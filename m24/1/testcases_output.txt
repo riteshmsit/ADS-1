@@ -9,11 +9,11 @@ Alice
 Bob
 John
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "get"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Alice"
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -31,11 +31,11 @@ Expected Output:
 45.4
 99.3
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "get"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Alice"
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -57,11 +57,11 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "get"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "Alice"
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -566,9 +566,9 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "get"
+Exception in thread "main" java.lang.NumberFormatException: For input string: "H3CZ"
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:10)
 ----------------------------------------
