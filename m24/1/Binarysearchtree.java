@@ -69,14 +69,9 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
      * @return [description]
      */
     public Value get(Studentdetails key) {
-        if (key.getchoice() == 1) {
-            return get(root, key);
-        } else if (key.getchoice() == 2) {
-            return get(root, key);
-        }
-        return null;
+        return get(root, key);
     }
-    /**
+    /**     
      * @brief [brief description]
      * @details [long description]
      * Time complexity is O(log(N))
@@ -87,7 +82,7 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
      */
     private Value get(Node x, Studentdetails key) {
         if (key == null) {
-        	System.out.println("empty");
+        	System.out.println("Student doesn't exists...");
         }
         if (x == null) {
         	//System.out.println("in get");
@@ -101,7 +96,12 @@ class Binarysearchtree<Key extends Comparable<Key>, Value> {
         	return get(x.right, key);
         }
         else {
+            if (key.getchoice() == 2) {
         	return x.value;
+        } else {
+            //System.out.println(x.getrollnumber());
+            return null;
+        }
         }
     }
 }

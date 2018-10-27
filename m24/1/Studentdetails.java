@@ -15,7 +15,6 @@ class Studentdetails {
 		this.rollnumber = rollnumber;
 		this.choice = choice;
 	}
-
 	public int getrollnumber() {
 		return this.rollnumber;
 	}
@@ -33,13 +32,15 @@ class Studentdetails {
 			return 1;
 		} else if(this.getrollnumber() < that.getrollnumber()) {
 			return -1;
-		} else if (this.getmarks() > that.getmarks()){
-			return 1;
+		} else if (this.getrollnumber() == that.getrollnumber()) {
+			return 0;
 		}
 		else if (this.getmarks() < that.getmarks()) {
 			return -1;
+		} else if (this.getmarks() > that.getmarks()) {
+			return 1;
 		} else {
-			return 0;
+			return 2;
 		}
 	}
 }
