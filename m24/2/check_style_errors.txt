@@ -1,0 +1,17 @@
+Starting audit...
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:2:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:3:12: Variable 'marks' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:4:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:7:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:7:20: Parameter name should be final. [FinalParameters]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:7:27: 'name' hides a field. [HiddenField]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:7:33: Parameter marks should be final. [FinalParameters]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:7:40: 'marks' hides a field. [HiddenField]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:16:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:22:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m24\2\Studentdetails.java:25:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 14 errors.
