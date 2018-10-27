@@ -83,7 +83,7 @@ class Hashtable<Key, Value> {
     public String get(Key key, int num) {
         Value v = get(key);
         String s = "";
-        s+= v;
+        s += v;
         String[] str = s.split(",");
         if (v == null) {
             return "Student doesn't exists...";
@@ -100,7 +100,9 @@ class Hashtable<Key, Value> {
                 return vals[i];
         return null;
     }
-// The time complexity is average time
+    public Value[] get (Key key, ) 
+
+// The time complexity is constant time(k)
     public void delete(Key key) {
         if (key == null) throw new IllegalArgumentException("argument to delete() is null");
         if (!contains(key)) return;
