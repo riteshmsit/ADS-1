@@ -1,3 +1,9 @@
+/**
+ * Class for BinarySearchTree.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 public class BinaryST<Key extends Comparable<Key>, Value> extends Queue {
     /**
      * Root.
@@ -424,5 +430,3 @@ public class BinaryST<Key extends Comparable<Key>, Value> extends Queue {
         if (cmphi > 0) keys(x.right, queue, lo, hi);
     }
 }
-
-
