@@ -26,6 +26,7 @@ class Solution {
 							System.out.println(s.getName());
 						}
 					}
+					break;
 				case "LE":
 					a = Double.parseDouble(inp[1]);
 					for (Student s : keys) {
@@ -33,6 +34,7 @@ class Solution {
 							System.out.println(s.getName());
 						}
 					}
+					break;
 				case "GE":
 					a = Double.parseDouble(inp[1]);
 					for (Student s : keys) {
@@ -40,6 +42,9 @@ class Solution {
 							System.out.println(s.getName());
 						}
 					}
+					break;
+				default:
+				break;
 			}
 		}
 		
