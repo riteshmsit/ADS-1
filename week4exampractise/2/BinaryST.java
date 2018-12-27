@@ -4,7 +4,7 @@
  * @param      <Key>    The key
  * @param      <Value>  The value
  */
-public class BinaryST<Key extends Comparable<Key>, Value> extends Queue {
+public class BinaryST<Key extends Comparable<Key>, Value> {
     /**
      * Root.
      */
