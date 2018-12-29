@@ -1,0 +1,32 @@
+########## Testcase 0: Passed ##########
+Expected Output: 
+Australia India SouthAfrica England Zimbabwe Bangladesh Ireland
+
+Your Output: 
+Australia India SouthAfrica England Zimbabwe Bangladesh Ireland
+----------------------------------------
+
+########## Testcase 1: Passed ##########
+Expected Output: 
+India SouthAfrica Australia Zimbabwe Pakistan WestIndies Bangladesh Ireland SriLanka England
+
+Your Output: 
+India SouthAfrica Australia Zimbabwe Pakistan WestIndies Bangladesh Ireland SriLanka England
+----------------------------------------
+
+########## Testcase 2: Passed ##########
+Expected Output: 
+a1 a2 a3 a4 a5 a6 a7 a8
+
+Your Output: 
+a1 a2 a3 a4 a5 a6 a7 a8
+----------------------------------------
+
+########## Testcase 3: Passed ##########
+Expected Output: 
+a11 a12 a13 a14 a15 a16 a17 a18 a1 a2 a3 a4 a5 a6 a7 a8
+
+Your Output: 
+a11 a12 a13 a14 a15 a16 a17 a18 a1 a2 a3 a4 a5 a6 a7 a8
+----------------------------------------
+
