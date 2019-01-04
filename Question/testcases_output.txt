@@ -14,6 +14,10 @@ Your Output:
 NO Registrations
 1,2
 2,3
+3,1
+5,1
+NO Registrations
+NO Registrations
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -33,6 +37,17 @@ Expected Output:
 
 Your Output: 
 0,6
+1,5
+2,8
+4,7
+6,3
+7,9
+8,1
+10,1
+19,2
+23,1
+NO Registrations
+NO Registrations
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -46,6 +61,11 @@ Expected Output:
 
 Your Output: 
 0,8
+1,8
+2,5
+3,7
+4,3
+5,6
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -70,5 +90,13 @@ Your Output:
 2,6
 3,9
 4,1
+5,2
+6,7
+8,3
+12,4
+NO Registrations
+15,7
+NO Registrations
+NO Registrations
 ----------------------------------------
 

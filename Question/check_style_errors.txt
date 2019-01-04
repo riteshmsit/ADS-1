@@ -172,8 +172,7 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:74: Line is longer than 80 characters (found 96). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:77: Expected @return tag. [JavadocMethod]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:92: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:103: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:111:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:111:21: Parameter val should be final. [FinalParameters]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:112:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:112:21: Parameter val should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 37 errors.
+Checkstyle ends with 36 errors.
