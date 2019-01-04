@@ -112,9 +112,10 @@ class Steque {
             //     deleteFirst(); 
             // }
              while (temp != null) { 
-            if (temp.next.data.equals(val)) {
+               if (temp.next.data.equals(val)) {
               temp.next = temp.next.next;
-                 size--;}
+              size--;
+             }
             //prev = temp; 
             temp = temp.next; 
         }
