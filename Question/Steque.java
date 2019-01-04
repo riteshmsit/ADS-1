@@ -94,7 +94,6 @@ class Steque {
                     for (int i = 0; i < count; i++) {
                         String[] c = temp.data.split(",");
                         if (jury[i] == Integer.parseInt(c[1])) {
-
                             delete(temp.data);
                             break;
                         }
@@ -102,21 +101,32 @@ class Steque {
                     temp = temp.next;
                 }
 
-                String[] a = head.data.split(",");
-                jury[count] = Integer.parseInt(a[1]);
-                count++;
                 str += head.data;
                 deleteFirst();
                 return str;
         }
         void delete(String val) {
             Node temp = head;
-            while (temp != null) {
-                if (head.next.data.equals(val)) {
-                head.next = temp.next.next;
-                size--;
-            }
-            temp = temp.next;
-            }
+            Node prev = null;
+            // if (head.data == val) {
+            //     deleteFirst(); 
+            // }
+             while (temp != null && temp.data != val) { 
+            
+            prev = temp; 
+            temp = temp.next; 
         }
+        prev.next = temp.next;
+        }     
+  
+        //     Node temp = head;
+        //     head = temp;
+        //     while (temp != null) {
+        //         if (temp.next.data.equals(val)) {
+        //         temp.next = temp.next.next;
+        //         size--;
+        //     }
+        //     temp = temp.next;
+        //     }
+        // }
 }

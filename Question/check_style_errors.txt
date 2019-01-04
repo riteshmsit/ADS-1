@@ -172,7 +172,14 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:74: Line is longer than 80 characters (found 96). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:77: Expected @return tag. [JavadocMethod]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:92: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:112:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:112:21: Parameter val should be final. [FinalParameters]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:108:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:108:21: Parameter val should be final. [FinalParameters]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:112: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:114: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:115: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:116: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:117: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:120: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\Question\Steque.java:121: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 36 errors.
+Checkstyle ends with 43 errors.
