@@ -14,10 +14,10 @@ Your Output:
 NO Registrations
 1,2
 2,3
-3,1
-4,3
-5,1
-7,1
+Exception in thread "main" java.lang.NullPointerException
+	at Steque.delete(Steque.java:115)
+	at Steque.display(Steque.java:97)
+	at Solution.main(Solution.java:15)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
