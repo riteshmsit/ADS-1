@@ -95,10 +95,12 @@ class Steque {
                         String[] c = temp.data.split(",");
                         if (jury[i] == Integer.parseInt(c[1])) {
                             delete(temp.data);
+                            break;
                         }
                     }
                     temp = temp.next;
                 }
+                
                 String[] a = head.data.split(",");
                 jury[count] = Integer.parseInt(a[1]);
                 count++;
