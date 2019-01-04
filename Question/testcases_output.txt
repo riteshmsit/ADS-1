@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 0,2
 NO Registrations
@@ -14,10 +14,10 @@ Your Output:
 NO Registrations
 1,2
 2,3
-Exception in thread "main" java.lang.NullPointerException
-	at Steque.delete(Steque.java:117)
-	at Steque.display(Steque.java:97)
-	at Solution.main(Solution.java:15)
+3,1
+4,3
+5,1
+6,2
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########

@@ -89,33 +89,33 @@ class Steque {
             deleteFirst();
             return str;
         }
-            Node temp = head;     
-                while (temp != null) {
-                    for (int i = 0; i < count; i++) {
-                        String[] c = temp.data.split(",");
-                        if (jury[i] == Integer.parseInt(c[1])) {
-                            delete(temp.data);
-                            break;
-                        }
-                    }
-                    temp = temp.next;
-                }
+            // Node temp = head;     
+            //     while (temp != null) {
+            //         for (int i = 0; i < count; i++) {
+            //             String[] c = temp.data.split(",");
+            //             if (jury[i] == Integer.parseInt(c[1])) {
+            //                 delete(temp.data);
+            //                 break;
+            //             }
+            //         }
+            //         temp = temp.next;
+            //     }
 
                 str += head.data;
                 deleteFirst();
                 return str;
         }
-        void delete(String val) {
-            Node temp = head;
-            Node prev = null;
-            if (head.data == val) {
-                deleteFirst(); 
-            }
-            while (temp != null) 
-        { 
+        // void delete(String val) {
+        //     Node temp = head;
+        //     Node prev = null;
+        //     if (head.data == val) {
+        //         deleteFirst(); 
+        //     }
+        //     while (temp != null) 
+        // { 
             
-            temp.next = temp.next.next; 
-        }     
+        //     temp.next = temp.next.next; 
+        // }     
         //prev.next = temp.next;
   
 
@@ -140,4 +140,3 @@ class Steque {
         //     temp = temp.next;
         //     }
         // }
-}
