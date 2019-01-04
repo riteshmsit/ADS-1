@@ -107,18 +107,26 @@ class Steque {
         }
         void delete(String val) {
             Node temp = head;
-            //Node prev = null;
-            // if (head.data == val) {
-            //     deleteFirst(); 
-            // }
-             while (temp != null) { 
-               if (temp.next.data.equals(val)) {
-              temp.next = temp.next.next;
-              size--;
-             }
-            //prev = temp; 
+            Node prev = null;
+            if (head.data == val) {
+                deleteFirst(); 
+            }
+            while (temp != null) 
+        { 
+            prev = temp; 
             temp = temp.next; 
-        }
+        }     
+        prev.next = temp.next;
+  
+
+        //      while (temp != null) { 
+        //        if (temp.next.data.equals(val)) {
+        //       temp.next = temp.next.next;
+        //       size--;
+        //      }
+        //     //prev = temp; 
+        //     temp = temp.next; 
+        // }
         //prev.next = temp.next;
         }     
   
