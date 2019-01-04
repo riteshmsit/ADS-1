@@ -113,10 +113,10 @@ class Steque {
             }
             while (temp != null) 
         { 
-            prev = temp; 
-            temp = temp.next; 
+            
+            temp.next = temp.next.next; 
         }     
-        prev.next = temp.next;
+        //prev.next = temp.next;
   
 
         //      while (temp != null) { 
