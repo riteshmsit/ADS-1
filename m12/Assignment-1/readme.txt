@@ -28,4 +28,4 @@ Reservation criteria:
 All applicants are eligible for un reserved category seats
 Un reserved category seats should be filled with descending merit order
 reserved seats should be filled with reserved students in descending merit order
-if any of the reserved seats are left with out reserved candidates then fill the seats with descending merit order 
+if any of the reserved seats are left with out reserved candidates then fill the seats with descending merit order

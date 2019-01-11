@@ -66,91 +66,19 @@ class Insertion {
         int q = overall[0].getunresvacancies();
         int c = overall[0].getscvacancies();
         int d = overall[0].getstvacancies();
-        int count = 0;
-        int cb = 0 ,csc =0,cst=0;
         String s = "";
         int i;
         for (i = 0; i < q; i++) {
-            if (a[i].getreservation().equals("BC")) {
-                cb++;
-            } else if (a[i].getreservation().equals("SC")) {
-                csc++;
-            } else if (a[i].getreservation().equals("ST")) {
-                cst++;
+            s += a[i];
+        }
+        for (int k = i; k < size; k++) {
+            if (a[i].getreservation().equals("SC") || a[i].getreservation().equals("ST")) {
+                s += a[k];
+                i++;
             }
-            s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-        // }
-        //i--;
+            
         }
-        //int j = i;
-        //i = q;
-        if (cb != 0) {
-        while (b != 0 && b > 0) {
-            if (a[i].getreservation().equals("BC")) {
-            s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-            b--;
-            i++;
-            count++;
-        } else {
-            i++;
-        }
-        }
-        }
-        //i = q;
-        //i--;
         
-        //i--;
-        // while (c != 0 && c > 0) {
-        //     if (a[i].getreservation().equals("SC")) {
-        //         s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-        //         c--;
-        //         i++;
-        //     } else {
-        //     i++;
-        // }
-        //}
-        //i = q;
-        if (count == 0) {
-            int x = b + c + d;
-            i = q; 
-            while ((x) > 0) {
-                if (a[i].getreservation().equals("Open")) {
-                    s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-                    x--;
-                    i++;
-
-                } else {
-                    i++;
-                }
-            }
-        }
-        if (cst != 0) {
-        while (d != 0 && d > 0) {
-            if (a[i].getreservation().equals("ST")) {
-                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-                d--;
-                i++;
-                count++;
-            } else {
-                i++;
-            }
-        }
-        }
-        // if (count == 0) {
-        //     i = q;
-        // }
-        if (csc != 0) {
-        while (c != 0 && c > 0) {
-            if (a[i].getreservation().equals("SC")) {
-                s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
-                c--;
-                i++;
-                count++;
-            } else {
-            i++;
-        }
-        }
-        }   
         return s;
     }
 }

@@ -30,6 +30,7 @@ Ira,93,ST
 tanvi,90,BC
 Aditya,80,ST
 priya,72,SC
+
 Your Output: 
 divya,99,ST
 Deepak,98,Open
@@ -55,14 +56,9 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-divya,99,ST
-Deepak,98,Open
-Ira,93,ST
-tanvi,90,BC
-riya,83,Open
-Ajay,76,Open
-shyam,71,ST
+Students@2096442dStudents@9f70c54Students@234bef66Students@737996a0
 ----------------------------------------
+
 ########## Testcase 1: Failed ##########
 Expected Output: 
 divya,99,ST
@@ -104,6 +100,7 @@ tanvi,90,BC
 Raj,87,BC
 Aditya,80,ST
 priya,72,SC
+
 Your Output: 
 divya,99,ST
 Ishita,99,Open
@@ -136,14 +133,9 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-divya,99,ST
-Ishita,99,Open
-Deepak,98,Open
-Ira,93,ST
-tanvi,90,BC
-Raj,87,BC
-Aditya,80,ST
+Students@2096442dStudents@9f70c54Students@234bef66Students@737996a0Students@61dc03ce
 ----------------------------------------
+
 ########## Testcase 2: Failed ##########
 Expected Output: 
 divya,99,Open
@@ -160,6 +152,7 @@ Abhishek,60,BC
 divya,99,Open
 Aditya,80,ST
 priya,76,SC
+
 Your Output: 
 divya,99,Open
 tanvi,90,Open
@@ -172,10 +165,9 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-divya,99,Open
-tanvi,90,Open
-Ajay,76,Open
+Students@2096442d
 ----------------------------------------
+
 ########## Testcase 3: Failed ##########
 Expected Output: 
 divya,99,Open
@@ -195,6 +187,7 @@ Aditya,80,Open
 priya,76,SC
 Ajay,76,Open
 Tanya,66,BC
+
 Your Output: 
 divya,99,Open
 tanvi,90,ST
@@ -207,11 +200,9 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-Exception in thread "main" java.lang.NullPointerException
-	at Insertion.displaywithreservation(Insertion.java:129)
-	at Insertion.sortByInsertion(Insertion.java:52)
-	at Solution.main(Solution.java:26)
+Students@2096442dStudents@9f70c54Students@234bef66
 ----------------------------------------
+
 ########## Testcase 4: Failed ##########
 Expected Output: 
 divya,99,Open
@@ -258,6 +249,7 @@ priya,76,Open
 Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
+
 Your Output: 
 divya,99,Open
 tanvi,99,Open
@@ -290,20 +282,9 @@ Aryan,32,Open
 Shreya,23,Open
 shyam,23,Open
 
-divya,99,Open
-tanvi,99,Open
-Ishita,99,Open
-Deepak,98,Open
-Ira,93,Open
-Raj,87,Open
-mahesh,87,Open
-riya,83,Open
-Aditya,80,Open
-Ajay,76,Open
-priya,76,Open
-Amit,76,Open
-Arjun,75,Open
+Students@2096442dStudents@9f70c54Students@234bef66Students@737996a0Students@61dc03ceStudents@50f8360dStudents@2cb4c3ab
 ----------------------------------------
+
 ########## Testcase 5: Failed ##########
 Expected Output: 
 divya,99,ST
@@ -352,6 +333,7 @@ Arjun,75,Open
 rahul,73,Open
 priya,72,SC
 varsha,66,BC
+
 Your Output: 
 divya,99,ST
 Ishita,99,Open
@@ -384,8 +366,6 @@ Aryan,32,ST
 Manoj,32,SC
 Shreya,23,SC
 
-Exception in thread "main" java.lang.NullPointerException
-	at Insertion.displaywithreservation(Insertion.java:89)
-	at Insertion.sortByInsertion(Insertion.java:52)
-	at Solution.main(Solution.java:26)
+Students@2096442dStudents@9f70c54Students@234bef66Students@737996a0Students@61dc03ceStudents@50f8360dStudents@2cb4c3abStudents@13c78c0bStudents@12843fce
 ----------------------------------------
+
