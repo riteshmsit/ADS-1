@@ -56,7 +56,7 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-Students@2096442dStudents@9f70c54Students@234bef66Students@737996a0
+divya,99,STDeepak,98,OpenIra,93,STtanvi,90,BC
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -133,7 +133,7 @@ Anjali,38,SC
 Aryan,32,ST
 Shreya,23,SC
 
-Students@2096442dStudents@9f70c54Students@234bef66Students@737996a0Students@61dc03ce
+divya,99,STIshita,99,OpenDeepak,98,OpenIra,93,STtanvi,90,BC
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -165,7 +165,7 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-Students@2096442d
+divya,99,Open
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -200,7 +200,7 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-Students@2096442dStudents@9f70c54Students@234bef66
+divya,99,Opentanvi,90,STAditya,80,Open
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -282,7 +282,7 @@ Aryan,32,Open
 Shreya,23,Open
 shyam,23,Open
 
-Students@2096442dStudents@9f70c54Students@234bef66Students@737996a0Students@61dc03ceStudents@50f8360dStudents@2cb4c3ab
+divya,99,Opentanvi,99,OpenIshita,99,OpenDeepak,98,OpenIra,93,OpenRaj,87,Openmahesh,87,Open
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -366,6 +366,6 @@ Aryan,32,ST
 Manoj,32,SC
 Shreya,23,SC
 
-Students@2096442dStudents@9f70c54Students@234bef66Students@737996a0Students@61dc03ceStudents@50f8360dStudents@2cb4c3abStudents@13c78c0bStudents@12843fce
+divya,99,STIshita,99,OpenDeepak,99,OpenIra,93,STtanvi,90,BCRaj,87,BCmahesh,87,BCriya,83,OpenStudents@2096442d
 ----------------------------------------
 
