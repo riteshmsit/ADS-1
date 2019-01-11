@@ -72,6 +72,7 @@ class Insertion {
             if ((a[k].getreservation().equals("SC") || a[k].getreservation().equals("ST")) && c < (vac - un)) {
                 s += a[k].getname() + ","+a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                 i++;
+                c++;
             }
             
         }
