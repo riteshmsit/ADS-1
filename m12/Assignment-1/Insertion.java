@@ -63,12 +63,13 @@ class Insertion {
     public String displaywithreservation(Students[] a,int size, Students[] overall,int overallsize, int vac, int un) {
         
         String s = "";
+        int c = 0;
         int i;
         for (i = 0; i < un; i++) {
             s += a[i].getname() + ","+a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
         }
         for (int k = i; k < size; k++) {
-            if (a[k].getreservation().equals("SC") || a[k].getreservation().equals("ST")) {
+            if ((a[k].getreservation().equals("SC") || a[k].getreservation().equals("ST")) && c < vac) {
                 s += a[k].getname() + ","+a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                 i++;
             }
