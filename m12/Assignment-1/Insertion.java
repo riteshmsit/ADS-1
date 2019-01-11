@@ -19,7 +19,7 @@ class Insertion {
                         if (a[j - 1].getsubject2() < a[j].getsubject2()) {
                             Students t = a[j];
                             a[j] = a[j - 1];
-                            a[j] = t;
+                            a[j - 1] = t;
                         }
                         else if (a[j - 1].getsubject2() == a[j].getsubject2()) {
                                 String[] s1 = a[j - 1].getdateofbirth().split("-");
@@ -27,17 +27,17 @@ class Insertion {
                                 if (Integer.parseInt(s1[2]) > Integer.parseInt(s2[2])) {
                                     Students t = a[j];
                                     a[j] = a[j - 1];
-                                    a[j] = t;
+                                    a[j - 1] = t;
                                 } else if (Integer.parseInt(s1[2]) == Integer.parseInt(s2[2])) {
                                     if (Integer.parseInt(s1[1]) > Integer.parseInt(s2[1])) {
                                         Students t = a[j];
                                         a[j] = a[j - 1];
-                                        a[j] = t;
+                                        a[j - 1] = t;
                                     } else if (Integer.parseInt(s1[1]) == Integer.parseInt(s2[1])) {
                                         if (Integer.parseInt(s1[0]) > Integer.parseInt(s2[0])) {
                                             Students t = a[j];
                                             a[j] = a[j - 1];
-                                            a[j] = t;
+                                            a[j - 1] = t;
                                         }
                                     } 
                                 }

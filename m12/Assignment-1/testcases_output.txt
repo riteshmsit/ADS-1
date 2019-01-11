@@ -271,16 +271,16 @@ Arjun,75,Open
 
 Your Output: 
 divya,99,Open
-tanvi,99,Open
 Ishita,99,Open
+tanvi,99,Open
 Deepak,98,Open
 Ira,93,Open
 Raj,87,Open
 mahesh,87,Open
 riya,83,Open
 Aditya,80,Open
-Ajay,76,Open
 priya,76,Open
+Ajay,76,Open
 Amit,76,Open
 Arjun,75,Open
 rahul,73,Open
@@ -302,8 +302,8 @@ Shreya,23,Open
 shyam,23,Open
 
 divya,99,Open
-tanvi,99,Open
 Ishita,99,Open
+tanvi,99,Open
 Deepak,98,Open
 Ira,93,Open
 Raj,87,Open
@@ -369,8 +369,8 @@ Raj,87,BC
 mahesh,87,BC
 riya,83,Open
 Aditya,80,ST
-Ajay,76,Open
 Amit,76,Open
+Ajay,76,Open
 Arjun,75,Open
 rahul,73,Open
 priya,72,SC
@@ -387,8 +387,8 @@ vani,50,Open
 Sneha,50,SC
 Aishwarya,48,Open
 Anjali,38,SC
-Aryan,32,ST
 Manoj,32,SC
+Aryan,32,ST
 Shreya,23,SC
 
 divya,99,ST
