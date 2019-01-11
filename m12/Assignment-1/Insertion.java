@@ -24,17 +24,17 @@ class Insertion {
                         else if (a[j - 1].getsubject2() == a[j].getsubject2()) {
                                 String[] s1 = a[j - 1].getdateofbirth().split("-");
                                 String[] s2 = a[j].getdateofbirth().split("-");
-                                if (Integer.parseInt(s1[2]) > Integer.parseInt(s2[2])) {
+                                if (Integer.parseInt(s1[2]) < Integer.parseInt(s2[2])) {
                                     Students t = a[j];
                                     a[j] = a[j - 1];
                                     a[j - 1] = t;
                                 } else if (Integer.parseInt(s1[2]) == Integer.parseInt(s2[2])) {
-                                    if (Integer.parseInt(s1[1]) > Integer.parseInt(s2[1])) {
+                                    if (Integer.parseInt(s1[1]) < Integer.parseInt(s2[1])) {
                                         Students t = a[j];
                                         a[j] = a[j - 1];
                                         a[j - 1] = t;
                                     } else if (Integer.parseInt(s1[1]) == Integer.parseInt(s2[1])) {
-                                        if (Integer.parseInt(s1[0]) > Integer.parseInt(s2[0])) {
+                                        if (Integer.parseInt(s1[0]) < Integer.parseInt(s2[0])) {
                                             Students t = a[j];
                                             a[j] = a[j - 1];
                                             a[j - 1] = t;
