@@ -389,6 +389,6 @@ tanvi,90,BC
 Raj,87,BC
 mahesh,87,BC
 riya,83,Open
-Students@2096442d
+Aditya,80,ST
 ----------------------------------------
 
