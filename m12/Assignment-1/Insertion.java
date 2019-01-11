@@ -2,7 +2,7 @@ class Insertion {
     Insertion() {
 
     }
-    public void sortByInsertion(Students[] a,int size,Students[] overall,int overallsize) {
+    public void sortByInsertion(Students[] a,int size,Students[] overall,int overallsize, int vac, int un) {
         for (int i = 0; i < size; i++) { 
             int j = i;
             while(j > 0) {
@@ -49,7 +49,7 @@ class Insertion {
         }
         System.out.println(displayToString(a, size));
         System.out.println();
-        System.out.println(displaywithreservation(a, size, overall, overallsize));
+        System.out.println(displaywithreservation(a, size, overall, overallsize, vac, un));
     }
     public String displayToString(Students[] a, int size) {
         String s = "";
@@ -60,15 +60,11 @@ class Insertion {
         s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation();
         return s;
     }
-    public String displaywithreservation(Students[] a,int size, Students[] overall,int overallsize) {
-        int j = overall[0].getvacancies();
-        int b = overall[0].getbcvacancies();
-        int q = overall[0].getunresvacancies();
-        int c = overall[0].getscvacancies();
-        int d = overall[0].getstvacancies();
+    public String displaywithreservation(Students[] a,int size, Students[] overall,int overallsize, int vac, int un) {
+        
         String s = "";
         int i;
-        for (i = 0; i < q; i++) {
+        for (i = 0; i < vac; i++) {
             s += a[i];
         }
         for (int k = i; k < size; k++) {
