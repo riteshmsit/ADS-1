@@ -69,7 +69,7 @@ class Insertion {
             s += a[i].getname() + ","+a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
         }
         for (int k = i; k < size; k++) {
-            if ((a[k].getreservation().equals("SC") || a[k].getreservation().equals("ST")) && c < vac) {
+            if ((a[k].getreservation().equals("SC") || a[k].getreservation().equals("ST")) && c < (vac - un)) {
                 s += a[k].getname() + ","+a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                 i++;
             }
