@@ -64,7 +64,7 @@ class Insertion {
         
         String s = "";
         int i;
-        for (i = 0; i < vac; i++) {
+        for (i = 0; i < un; i++) {
             s += a[i];
         }
         for (int k = i; k < size; k++) {
