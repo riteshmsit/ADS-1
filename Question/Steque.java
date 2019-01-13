@@ -121,7 +121,10 @@ class Steque {
                     jury[count] = Integer.parseInt(a[1]);
                     count++;
             }
-            System.out.println(jury);
+            for (int i = 0; i < count; i++) {
+                System.out.print(jury[i]);
+            }
+            //System.out.println(jury);
             deleteFirst();
             return str;
         }

@@ -10,10 +10,8 @@ NO Registrations
 6,2
 
 Your Output: 
-[I@35f983a6
 0,2
 NO Registrations
-[I@35f983a6
 1,2
 ----------------------------------------
 
