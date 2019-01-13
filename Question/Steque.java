@@ -134,13 +134,13 @@ class Steque {
                 if (jury[i] == Integer.parseInt(c[1])) {
                     deleteFirst();
                     str += head.data;
-                    return str;
+                    break;
                 }
             }
             // str += head.data;
             //     deleteFirst();
             //     return str;
-            return "";
+            return str;
         }
         // void delete(String val) {
         //     Node temp = head;
