@@ -66,15 +66,7 @@ class Insertion {
         int c = 0;
         int i;
         for (i = 0; i < un; i++) {
-            if (a[i].getreservation().equals("BC")) {
-                bcvac--;
-            }
-            if (a[i].getreservation().equals("SC")) {
-                scvac--;
-            }
-            if (a[i].getreservation().equals("ST")) {
-                stvac--;
-            }
+            
             s += a[i].getname() + ","+a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
             vac -= 1;
         }
@@ -86,14 +78,14 @@ class Insertion {
                     vac--;
                 }
             }
-            if (scvac > 0 && vac > 0) {
+            else if (scvac > 0 && vac > 0) {
                 if (a[k].getreservation().equals("SC")) {
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     scvac--;
                     vac--;
                 }
             }
-            if (stvac > 0 && vac > 0) {
+            else if (stvac > 0 && vac > 0) {
                 if (a[k].getreservation().equals("ST")) {
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     stvac--;
