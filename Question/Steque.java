@@ -125,7 +125,7 @@ class Steque {
             // }
             
             Node temp = head;
-            int jzcount = 0;
+            //int jzcount = 0;
             int flag = 0;
             while (temp != null) {
                 String[] c = temp.data.split(",");
@@ -139,7 +139,8 @@ class Steque {
             }
             if (flag == 0) {
                 str += temp.data;
-                return str;
+                break;
+                //return str;
             }
             temp  = temp.next;
         }
