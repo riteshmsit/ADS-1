@@ -143,14 +143,15 @@ class Steque {
             String[] c = head.data.split(",");
             for (int i = 0; i < count; i++) {
                 if (jury[i] == Integer.parseInt(c[1])) {
-                    deleteFirst();
-                    str += head.data;
+                    
+                    str += head.next.data;
                     break;
                 }
             }
             // str += head.data;
             //     deleteFirst();
             //     return str;
+            deleteFirst();
             return str;
         }
         // void delete(String val) {
