@@ -87,7 +87,7 @@ class Insertion {
             if (stvac > 0 && vac > 0) {
                 if (a[k].getreservation().equals("ST")) {
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
-                    bcvac--;
+                    stvac--;
                     vac--;
                 }
             }
