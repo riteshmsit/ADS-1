@@ -182,7 +182,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
             }
         }
         students1 = Arrays.copyOf(students1, z);
-        //Arrays.sort(students1, Collections.reverseOrder());
+        Arrays.sort(students1, Collections.reverseOrder());
     }
     /**
      * insertion sort.
