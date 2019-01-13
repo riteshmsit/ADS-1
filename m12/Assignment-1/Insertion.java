@@ -107,7 +107,7 @@ class Insertion {
 
             
         }
-        for (int k = count; i < size && vac > 0; i++) {
+        for (int k = count; i < size && vac > 0; k++) {
             s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     vac--;
                     count++;
