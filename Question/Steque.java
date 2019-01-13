@@ -121,9 +121,7 @@ class Steque {
                     jury[count] = Integer.parseInt(a[1]);
                     count++;
             }
-            for (int i = 0; i < count; i++) {
-                System.out.print(jury[i]);
-            }
+            
             //System.out.println(jury);
             deleteFirst();
             return str;
@@ -142,7 +140,9 @@ class Steque {
             //         temp = temp.next;
             //     }
         
-            
+            for (int i = 0; i < count; i++) {
+                System.out.print(jury[i]);
+            }
 
             String[] c = head.data.split(",");
             for (int i = 0; i < count; i++) {
