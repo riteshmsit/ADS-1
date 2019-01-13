@@ -66,12 +66,12 @@ class Steque {
             }
 
         }
-        if (jrycount == jury.length) {
+        if (jrycount == count) {
             jury[count++] =  Integer.parseInt(a[1]);
         }
-        if (jury.length == 0) {
-            jury[count++] = Integer.parseInt(a[1]);
-        }
+        // if (jury.length == 0) {
+        //     jury[count++] = Integer.parseInt(a[1]);
+        // }
         
     }
     /**.The time complexity is 1 as element is deleted once.
@@ -82,20 +82,9 @@ class Steque {
         // String[] a = head.data.split(",");
         // jury[count] = a[1];
         // count++;
-        result[counts++] = head.data;
-        String[] d = head.data.split(",");
-        int jjcount = 0;
-        for (int i = 0; i < count; i++) {
-            if (jury[i] != Integer.parseInt(d[1])) {
-                jjcount++;
-            }
+    
 
-        }
-        if (jjcount == jury.length) {
-            jury[count++] = Integer.parseInt(d[1]);
-        }
         head = head.next;
-
         size--;
         }
         //display();
@@ -135,23 +124,29 @@ class Steque {
             //     System.out.print(jury[i]);
             // }
             String[] c = head.data.split(",");
+            Node temp = head;
             int jzcount = 0;
+            int flag = 0;
+            while (temp != null) {
             for (int i = 0; i < count; i++) {
+                flag = 0;
                 if (jury[i] == Integer.parseInt(c[1])) {        
-                    str += head.next.data;
-                    break;
-                } else {
-                    jzcount++;
-                }
+                    //str += head.next.data;
+                    flag = 1;
+                } 
+
             }
-            if (jzcount == jury.length) {
-                jury[count++] = Integer.parseInt(c[1]);
+            if (flag == 0) {
+                str += temp.data;
+                return str;
             }
+            temp  = temp.next;
+        }
 
             // str += head.data;
             //     deleteFirst();
             //     return str;
-            deleteFirst();
+            //deleteFirst();
             return str;
         }
         // void delete(String val) {
