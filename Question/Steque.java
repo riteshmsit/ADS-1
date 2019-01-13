@@ -80,6 +80,17 @@ class Steque {
         // jury[count] = a[1];
         // count++;
         result[counts++] = head.data;
+        String[] d = head.data.split(",");
+        int jjcount = 0;
+        for (int i = 0; i < count; i++) {
+            if (jury[i] != Integer.parseInt(d[1])) {
+                jjcount++;
+            }
+
+        }
+        if (jjcount == jury.length) {
+            jury[count++] = Integer.parseInt(d[1]);
+        }
         head = head.next;
 
         size--;
