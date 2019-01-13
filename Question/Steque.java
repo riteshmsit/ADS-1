@@ -161,6 +161,7 @@ class Steque {
         { //
             if (tep.next.data.equals(val)) {
                 tep.next = tep.next.next;
+                break;
             }
             tep = tep.next; 
         }     

@@ -13,6 +13,7 @@ Your Output:
 0,2
 NO Registrations
 1,2
+3,1
 Exception in thread "main" java.lang.NullPointerException
 	at Steque.delete(Steque.java:162)
 	at Steque.display(Steque.java:142)
