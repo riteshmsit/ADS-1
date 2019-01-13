@@ -218,6 +218,8 @@ divya,99,Open
 tanvi,90,ST
 Aditya,80,Open
 Tanya,66,BC
+tanvi,90,ST
+tanvi,90,ST
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -306,6 +308,12 @@ Deepak,98,Open
 Ira,93,Open
 Raj,87,Open
 mahesh,87,Open
+divya,99,Open
+divya,99,Open
+divya,99,Open
+divya,99,Open
+divya,99,Open
+divya,99,Open
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -398,5 +406,11 @@ Raj,87,BC
 mahesh,87,BC
 riya,83,Open
 varsha,66,BC
+Deepak,99,Open
+Deepak,99,Open
+Deepak,99,Open
+Deepak,99,Open
+Deepak,99,Open
+Deepak,99,Open
 ----------------------------------------
 
