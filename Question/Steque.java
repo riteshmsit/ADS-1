@@ -121,6 +121,7 @@ class Steque {
                     jury[count] = Integer.parseInt(a[1]);
                     count++;
             }
+            System.out.println(jury);
             deleteFirst();
             return str;
         }
@@ -142,8 +143,7 @@ class Steque {
 
             String[] c = head.data.split(",");
             for (int i = 0; i < count; i++) {
-                if (jury[i] == Integer.parseInt(c[1])) {
-                    
+                if (jury[i] == Integer.parseInt(c[1])) {        
                     str += head.next.data;
                     break;
                 }
