@@ -128,21 +128,14 @@ class Steque {
             //     }
         
             
-                int jjcount = 0;
-                String[] b = head.data.split(",");
-                for (int i = 0; i < count; i++) {
-                if (jury[i] != Integer.parseInt(b[1])) {
-                        jjcount++;
-                } else {
-                    
-                    str +=  head.next.data;
+
+            String[] c = head.data.split(",");
+            for (int i = 0; i < count; i++) {
+                if (jury[i] == Integer.parseInt(c[1])) {
                     deleteFirst();
+                    str += head.data;
                     return str;
                 }
-            }
-            if (jjcount == jury.length) {
-                    jury[count++] = Integer.parseInt(b[1]);
-                    
             }
             str += head.data;
                 deleteFirst();
