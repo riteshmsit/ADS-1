@@ -139,6 +139,7 @@ class Steque {
             }
             if (flag == 0) {
                 str += temp.data;
+                delete(temp.data);
                 break;
                 //return str;
             }
@@ -149,19 +150,21 @@ class Steque {
             //     deleteFirst();
             //     return str;
             //deleteFirst();
+            
             return str;
         }
-        // void delete(String val) {
-        //     Node temp = head;
-        //     Node prev = null;
-        //     if (head.data == val) {
-        //         deleteFirst(); 
-        //     }
-        //     while (temp != null) 
-        // { //
-            
-        //     temp.next = temp.next.next; 
-        // }     
+        void delete(String val) {
+            Node tep = head;
+            //Node prev = null;
+           
+            while (tep != null) 
+        { //
+            if (tep.next.data.equals(val)) {
+                tep.next = tep.next.next;
+            }
+            tep = tep.next; 
+        }     
+    }
         //prev.next = temp.next;
   
 
