@@ -123,11 +123,12 @@ class Steque {
             // for (int i = 0; i < count; i++) {
             //     System.out.print(jury[i]);
             // }
-            String[] c = head.data.split(",");
+            
             Node temp = head;
             int jzcount = 0;
             int flag = 0;
             while (temp != null) {
+                String[] c = temp.data.split(",");
             for (int i = 0; i < count; i++) {
                 flag = 0;
                 if (jury[i] == Integer.parseInt(c[1])) {        
@@ -156,7 +157,7 @@ class Steque {
         //         deleteFirst(); 
         //     }
         //     while (temp != null) 
-        // { 
+        // { //
             
         //     temp.next = temp.next.next; 
         // }     
