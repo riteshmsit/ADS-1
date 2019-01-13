@@ -2,7 +2,7 @@ class Insertion {
     Insertion() {
 
     }
-    public void sortByInsertion(Students[] a,int size,Students[] overall,int overallsize, int vac, int un) {
+    public void sortByInsertion(Students[] a,int size,Students[] overall,int overallsize, int vac, int un,int bcvac, int scvac, int stvac) {
         for (int i = 0; i < size; i++) { 
             int j = i;
             while(j > 0) {
@@ -49,7 +49,7 @@ class Insertion {
         }
         System.out.println(displayToString(a, size));
         System.out.println();
-        System.out.println(displaywithreservation(a, size, overall, overallsize, vac, un));
+        System.out.println(displaywithreservation(a, size, overall, overallsize, vac, un, bcvac, scvac, stvac));
     }
     public String displayToString(Students[] a, int size) {
         String s = "";
@@ -60,23 +60,45 @@ class Insertion {
         s += a[i].getname() + "," + a[i].gettotalmarks() + "," + a[i].getreservation();
         return s;
     }
-    public String displaywithreservation(Students[] a,int size, Students[] overall,int overallsize, int vac, int un) {
+    public String displaywithreservation(Students[] a,int size, Students[] overall,int overallsize, int vac, int un,int bcvac, int scvac, int stvac) {
         
         String s = "";
         int c = 0;
         int i;
         for (i = 0; i < un; i++) {
             s += a[i].getname() + ","+a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
+            vac -= 1;
         }
         for (int k = i; k < size; k++) {
-            if ((a[k].getreservation().equals("SC") || a[k].getreservation().equals("ST") || a[k].getreservation().equals("BC")) && c < (vac - un)) {
-                s += a[k].getname() + ","+a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
-                i++;
-                c++;
+            if (bcvac > 0 && vac > 0) {
+                if (a[k].getreservation().equals("BC")) {
+                    s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
+                    bcvac--;
+                    vac--;
+                }
+            }
+            if (scvac > 0 && vac > 0) {
+                if (a[k].getreservation().equals("SC")) {
+                    s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
+                    scvac--;
+                    vac--;
+                }
+            }
+            if (stvac > 0 && vac > 0) {
+                if (a[k].getreservation().equals("ST")) {
+                    s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
+                    bcvac--;
+                    vac--;
+                }
+            }
+            else if (vac > 0 && (scvac <=0 || stvac <=0 || bcvac <=0)) {
+                
+                    s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
+                    vac--;
+                
             }
             
         }
-        
         return s;
     }
 }

@@ -23,6 +23,6 @@ class Solution {
 			i++;
 		}
 		overall[overallsize++] = new Students(qualified, vacancies, unresvacancies, bcvacancies, scvacancies, stvacancies);
-		obj2.sortByInsertion(details,size, overall, overallsize, vacancies, unresvacancies);
+		obj2.sortByInsertion(details,size, overall, overallsize, vacancies, unresvacancies, bcvacancies, scvacancies, stvacancies);
 	}
 }
