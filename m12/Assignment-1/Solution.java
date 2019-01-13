@@ -1,28 +1,40 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.Collections;
+/**
+ * Class for solution.
+ */   
 class Solution {
-	private Solution() {
-
-	}
-	private static Students[] details = new Students[200];
-	private static Students[] overall = new Students[200];
-	private static int size = 0;
-	private static int overallsize = 0;
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		Insertion obj2 = new Insertion();
-		int qualified = Integer.parseInt(sc.nextLine());
-		int vacancies = Integer.parseInt(sc.nextLine());
-		int unresvacancies = Integer.parseInt(sc.nextLine());
-		int bcvacancies = Integer.parseInt(sc.nextLine());
-		int scvacancies = Integer.parseInt(sc.nextLine());
-		int stvacancies = Integer.parseInt(sc.nextLine());
-		int i = 0;
-		while (i < qualified) {
-			String[] st = sc.nextLine().split(",");
-			details[size++] = new Students(st[0], st[1], Integer.parseInt(st[2]), Integer.parseInt(st[3]), Integer.parseInt(st[4]), Integer.parseInt(st[5]), st[6]);
-			i++;
-		}
-		overall[overallsize++] = new Students(qualified, vacancies, unresvacancies, bcvacancies, scvacancies, stvacancies);
-		obj2.sortByInsertion(details,size, overall, overallsize, vacancies, unresvacancies, bcvacancies, scvacancies, stvacancies);
-	}
+    /**
+     * Constructs the object.
+     */
+    Solution() {
+    }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Merit m = new Merit();
+            int noOfapplied = Integer.parseInt(sc.nextLine());
+            int noOfvacancies = Integer.parseInt(sc.nextLine());
+            int noOfunres = Integer.parseInt(sc.nextLine());
+            int noOfBC = Integer.parseInt(sc.nextLine());
+            int noOfSC = Integer.parseInt(sc.nextLine());
+            int noOfST = Integer.parseInt(sc.nextLine());
+            for (int i = 0; i < noOfapplied; i++) {
+                String data = sc.nextLine();
+                String[] tokens = data.split(",");
+                m.addStudent(new Student(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6]));
+            }
+        m.InsertionSort();
+        System.out.println(m);
+        m.sort(noOfvacancies,noOfunres,noOfBC,noOfSC,noOfST);
+        // System.out.println(m);
+        for (int i = 0; i < noOfvacancies; i++) {
+            System.out.println(m.students1[i]);       
+        }
+    }   
 }
