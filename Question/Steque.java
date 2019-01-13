@@ -137,9 +137,10 @@ class Steque {
                     return str;
                 }
             }
-            str += head.data;
-                deleteFirst();
-                return str;
+            // str += head.data;
+            //     deleteFirst();
+            //     return str;
+            return "";
         }
         // void delete(String val) {
         //     Node temp = head;
