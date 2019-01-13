@@ -155,6 +155,7 @@ class Steque {
         }
         void delete(String val) {
             Node tep = head;
+            head = tep;
             //Node prev = null;
            
             while (tep != null) 

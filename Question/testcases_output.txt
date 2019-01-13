@@ -15,7 +15,7 @@ NO Registrations
 1,2
 3,1
 Exception in thread "main" java.lang.NullPointerException
-	at Steque.delete(Steque.java:162)
+	at Steque.delete(Steque.java:163)
 	at Steque.display(Steque.java:142)
 	at Solution.main(Solution.java:15)
 ----------------------------------------
@@ -37,7 +37,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Steque.delete(Steque.java:162)
+	at Steque.delete(Steque.java:163)
 	at Steque.display(Steque.java:142)
 	at Solution.main(Solution.java:15)
 ----------------------------------------
@@ -53,7 +53,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Steque.delete(Steque.java:162)
+	at Steque.delete(Steque.java:163)
 	at Steque.display(Steque.java:142)
 	at Solution.main(Solution.java:15)
 ----------------------------------------
@@ -76,7 +76,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Steque.delete(Steque.java:162)
+	at Steque.delete(Steque.java:163)
 	at Steque.display(Steque.java:142)
 	at Solution.main(Solution.java:15)
 ----------------------------------------
