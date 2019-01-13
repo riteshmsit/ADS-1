@@ -66,6 +66,15 @@ class Insertion {
         int c = 0;
         int i;
         for (i = 0; i < un; i++) {
+            if (a[i].getreservation().equals("BC")) {
+                bcvac--;
+            }
+            if (a[i].getreservation().equals("SC")) {
+                scvac--;
+            }
+            if (a[i].getreservation().equals("ST")) {
+                stvac--;
+            }
             s += a[i].getname() + ","+a[i].gettotalmarks() + "," + a[i].getreservation() + "\n";
             vac -= 1;
         }
