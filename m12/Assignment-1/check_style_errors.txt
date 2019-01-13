@@ -57,6 +57,7 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:71:39: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:77: Line is longer than 80 characters (found 105). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:77:46: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:80:31: Empty statement. [EmptyStatement]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:82:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:83: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:86: Line is longer than 80 characters (found 105). [LineLength]
@@ -64,6 +65,8 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:91:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:94: Line is longer than 80 characters (found 105). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:94:46: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:97:26: '=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:97:27: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:99:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:100: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:100:42: '<=' is not followed by whitespace. [WhitespaceAround]
@@ -72,10 +75,12 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:101:46: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:104: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:107: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:109:27: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:109:28: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:110: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:110:38: '+' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 75 errors.
+Checkstyle ends with 80 errors.
 Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]

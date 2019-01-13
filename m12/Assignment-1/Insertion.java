@@ -77,7 +77,7 @@ class Insertion {
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     bcvac--;
                     vac--;
-                    count++;
+                    count = k;;
                 }
             }
             
@@ -86,7 +86,7 @@ class Insertion {
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     stvac--;
                     vac--;
-                    count++;
+                    count = k;
                 }
             }
             else if (scvac > 0 && vac > 0) {
@@ -94,19 +94,19 @@ class Insertion {
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     scvac--;
                     vac--;
-                    count++;
+                    count=k;
                 }
             }
             else if (vac > 0 && (scvac <=0 || stvac <=0 || bcvac <= 0)) { 
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     vac--;
-                    count++;
+                    count = k;
                 
             }
 
             
         }
-        for (int k = count; k < size && vac > 0; k++) {
+        for (int k = count+1; k < size && vac > 0; k++) {
             s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     vac--;
                     count++;
