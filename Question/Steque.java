@@ -6,6 +6,7 @@ class Steque {
     int size = 0;
     int count = 0;
     int count2 = 0;
+    String[] result = new String[20];
     class Node {
         String  data;
         Node next;
@@ -55,7 +56,19 @@ class Steque {
         tail.next = newnode;
         tail = newnode;
         size++;
-        //display();
+        int jrycount = 0;
+        String[] a = tail.data.split(",");
+        for (int j = 0; j < count; j++) {
+            
+            if (Integer.parseInt(a[1]) != jury[j]) {
+                jrycount++;
+            }
+
+        }
+        if (jrycount == jury.length) {
+            jury[count++] =  Integer.parseInt(a[1]);
+        }
+        
     }
     /**.The time complexity is 1 as element is deleted once.
      * { function_description }
@@ -81,22 +94,25 @@ class Steque {
             str += "NO Registrations";
             return str;
         }
-        String[] b = head.data.split(",");
-        for (int i = 0; i < count; i++) {
-            if (Integer.parseInt(b[1]) == jury[i]) {
-                deleteFirst();
-                break;
-            }
-
-        }
+        
         if (size == 1) {
             str += head.data;
             String[] a = head.data.split(",");
-            jury[count] = Integer.parseInt(a[1]);
-            count++;
+            int jcount = 0;
+            for (int i = 0; i < count; i++) {
+                if (jury[i] != Integer.parseInt(a[1])) {
+                        jcount++;
+                }
+            }
+            if (jcount == jury.length) {
+                    jury[count] = Integer.parseInt(a[1]);
+                    count++;
+            }
             deleteFirst();
             return str;
         }
+
+
             // Node temp = head;     
             //     while (temp != null) {
             //         for (int i = 0; i < count; i++) {
@@ -109,7 +125,22 @@ class Steque {
             //         temp = temp.next;
             //     }
         
-                str += head.data;
+                
+                int jjcount = 0;
+                String[] b = head.data.split(",");
+                for (int i = 0; i < count; i++) {
+                if (jury[i] != Integer.parseInt(b[1])) {
+                        jjcount++;
+                } else {
+                    head = head.next;
+                    break;
+                }
+            }
+            if (jjcount == jury.length) {
+                    jury[count++] = Integer.parseInt(b[1]);
+                    
+            }
+            str += head.data;
                 deleteFirst();
                 return str;
         }
