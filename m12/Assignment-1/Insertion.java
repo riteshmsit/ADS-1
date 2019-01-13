@@ -78,17 +78,18 @@ class Insertion {
                     vac--;
                 }
             }
-            else if (scvac > 0 && vac > 0) {
-                if (a[k].getreservation().equals("SC")) {
-                    s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
-                    scvac--;
-                    vac--;
-                }
-            }
+            
             else if (stvac > 0 && vac > 0) {
                 if (a[k].getreservation().equals("ST")) {
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     stvac--;
+                    vac--;
+                }
+            }
+            else if (scvac > 0 && vac > 0) {
+                if (a[k].getreservation().equals("SC")) {
+                    s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
+                    scvac--;
                     vac--;
                 }
             }
