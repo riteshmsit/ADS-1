@@ -65,15 +65,15 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:94: Line is longer than 80 characters (found 105). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:94:46: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:99:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:100: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:100:42: '<=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:100:55: '<=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:101: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:102: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:102:46: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:105: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:108: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:111: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:111:38: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:101: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:101:46: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:104: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:107: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:110: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\m12\Assignment-1\Insertion.java:110:38: '+' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 75 errors.
 Starting audit...

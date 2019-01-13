@@ -97,8 +97,7 @@ class Insertion {
                     count++;
                 }
             }
-            else if (vac > 0 && (scvac <=0 || stvac <=0 || bcvac <= 0)) {
-                
+            else if (vac > 0 && (scvac <=0 || stvac <=0 || bcvac <= 0)) { 
                     s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     vac--;
                     count++;
@@ -107,7 +106,7 @@ class Insertion {
 
             
         }
-        for (int k = count; i < size && vac > 0; k++) {
+        for (int k = count; k < size && vac > 0; k++) {
             s += a[k].getname() + ","+ a[k].gettotalmarks() + "," + a[k].getreservation() + "\n";
                     vac--;
                     count++;
