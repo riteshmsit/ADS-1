@@ -81,6 +81,14 @@ class Steque {
             str += "NO Registrations";
             return str;
         }
+        String[] b = head.data.split(",");
+        for (int i = 0; i < count; i++) {
+            if (Integer.parseInt(b[1]) == jury[i]) {
+                deleteFirst();
+                break;
+            }
+
+        }
         if (size == 1) {
             str += head.data;
             String[] a = head.data.split(",");
@@ -100,7 +108,7 @@ class Steque {
             //         }
             //         temp = temp.next;
             //     }
-
+        
                 str += head.data;
                 deleteFirst();
                 return str;
