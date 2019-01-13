@@ -132,8 +132,9 @@ class Steque {
                 if (jury[i] != Integer.parseInt(b[1])) {
                         jjcount++;
                 } else {
-                    head = head.next;
-                    break;
+                    deleteFirst();
+                    str +=  head.data;
+                    return str;
                 }
             }
             if (jjcount == jury.length) {
