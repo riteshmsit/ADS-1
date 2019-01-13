@@ -69,6 +69,9 @@ class Steque {
         if (jrycount == jury.length) {
             jury[count++] =  Integer.parseInt(a[1]);
         }
+        if (jury.length == 0) {
+            jury[count++] = Integer.parseInt(a[1]);
+        }
         
     }
     /**.The time complexity is 1 as element is deleted once.
@@ -110,18 +113,6 @@ class Steque {
         
         if (size == 1) {
             str += head.data;
-            String[] a = head.data.split(",");
-            int jcount = 0;
-            for (int i = 0; i < count; i++) {
-                if (jury[i] != Integer.parseInt(a[1])) {
-                        jcount++;
-                }
-            }
-            if (jcount == jury.length) {
-                    jury[count] = Integer.parseInt(a[1]);
-                    count++;
-            }
-            
             //System.out.println(jury);
             deleteFirst();
             return str;
@@ -140,17 +131,23 @@ class Steque {
             //         temp = temp.next;
             //     }
         
-            for (int i = 0; i < count; i++) {
-                System.out.print(jury[i]);
-            }
-
+            // for (int i = 0; i < count; i++) {
+            //     System.out.print(jury[i]);
+            // }
             String[] c = head.data.split(",");
+            int jzcount = 0;
             for (int i = 0; i < count; i++) {
                 if (jury[i] == Integer.parseInt(c[1])) {        
                     str += head.next.data;
                     break;
+                } else {
+                    jzcount++;
                 }
             }
+            if (jzcount == jury.length) {
+                jury[count++] = Integer.parseInt(c[1]);
+            }
+
             // str += head.data;
             //     deleteFirst();
             //     return str;
