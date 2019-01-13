@@ -6,7 +6,8 @@ class Steque {
     int size = 0;
     int count = 0;
     int count2 = 0;
-    String[] result = new String[20];
+    String[] result = new String[400];
+    int counts = 0;
     class Node {
         String  data;
         Node next;
@@ -78,8 +79,9 @@ class Steque {
         // String[] a = head.data.split(",");
         // jury[count] = a[1];
         // count++;
-        
+        result[counts++] = head.data;
         head = head.next;
+
         size--;
         }
         //display();
@@ -125,15 +127,16 @@ class Steque {
             //         temp = temp.next;
             //     }
         
-                
+            
                 int jjcount = 0;
                 String[] b = head.data.split(",");
                 for (int i = 0; i < count; i++) {
                 if (jury[i] != Integer.parseInt(b[1])) {
                         jjcount++;
                 } else {
+                    
+                    str +=  head.next.data;
                     deleteFirst();
-                    str +=  head.data;
                     return str;
                 }
             }
