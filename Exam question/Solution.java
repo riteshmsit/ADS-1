@@ -17,6 +17,7 @@ final class Solution {
         Scanner sc = new Scanner(System.in);
         String line = sc.nextLine();
         int freq = 0;
+        String s = "";
         //File path = new File("Files.txt");
 
     // File [] files = path.listFiles();
@@ -44,7 +45,7 @@ final class Solution {
                     freq++;
                 }
              } 
-             String s = "";
+             // String s = "";
              if (counta != 0) {
              s += i + ", " + count +", "+ "[";
          } 
@@ -54,8 +55,8 @@ final class Solution {
              //s = s.substring(0, s.length() - 1);
              if (counta != 0) {
                 s = s.substring(0, s.length() - 2);
-             s += "]";
-             System.out.println(s);
+             s += "]" + "/n";
+             
           }
             
              
@@ -63,7 +64,8 @@ final class Solution {
              
 
         }
-        System.out.println(line +":" + freq); 
+        System.out.println(line +":" + freq);
+        System.out.println(s); 
 
 
     }    
