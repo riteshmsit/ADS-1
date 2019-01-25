@@ -16,6 +16,7 @@ final class Solution {
     public static void main(final String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         String line = sc.nextLine();
+        int freq = 0;
         //File path = new File("Files.txt");
 
     // File [] files = path.listFiles();
@@ -27,6 +28,7 @@ final class Solution {
          for (int i = 0; i < 8; i++) {
              Scanner scan = new Scanner(new File("C:/Users/rites/ADS-1/ADS-1/Exam question/Files/" + i + ".txt"));            
              String temp = scan.nextLine();
+             
              String[] temp1 = temp.split(" ");
              int counta = 0;
             // System.out.println(temp);
@@ -39,11 +41,9 @@ final class Solution {
                 if(temp1[j].equals(line)) {
                     count++;
                     a[counta++] = "" + j + ", ";
+                    freq++;
                 }
              } 
-             if (counta != 0) {
-             System.out.println(line + ":" + count);
-         }
              String s = "";
              if (counta != 0) {
              s += i + ", " + count +", "+ "[";
@@ -57,7 +57,14 @@ final class Solution {
              s += "]";
              System.out.println(s);
           }
+            
+             
+         
+             
 
         }
+        System.out.println(line +":" + freq); 
+
+
     }    
 }
