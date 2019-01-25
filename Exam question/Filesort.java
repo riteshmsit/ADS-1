@@ -1,9 +1,12 @@
+import java.util.*;
 class Filesort {
 	int freqj;
 	int i;
-	Filesort( int i, int freqj) {
+	ArrayList<Integer> arrli;
+	Filesort( int i, int freqj, ArrayList<Integer> arrli ) {
 		this.freqj = freqj;
 		this.i = i;
+		this.arrli = arrli;
 		// this.a = a;
 		// this.counta = counta;
 		
@@ -13,6 +16,9 @@ class Filesort {
 	}
 	public int geti() {
 		return this.i;
+	}
+	public ArrayList<Integer> getarrli() {
+		return this.arrli;
 	}
 	// int[] geta() {
 	// 	return this.a;

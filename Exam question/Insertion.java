@@ -35,7 +35,7 @@ class Insertion {
     public String print(int size ) {
         String str = "";
         for (int k = 0; k < size; k++) {
-            str += obj[k].geti() + ", " + obj[k].getfreqj() ;
+            str += obj[k].geti() + ", " + obj[k].getfreqj() + ", " + obj[k].getarrli();
             // for (int j = 0; j < obj[k].counta(); j++) {
             //     str += a[j];
             // }

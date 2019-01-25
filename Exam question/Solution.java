@@ -1,5 +1,5 @@
 import java.io.File;
-import java.util.Scanner;
+import java.util.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
@@ -31,7 +31,7 @@ final class Solution {
          for (int i = 0; i <= 8; i++) {
              Scanner scan = new Scanner(new File("C:/Users/rites/ADS-1/ADS-1/Exam question/Files/" + i + ".txt"));            
              String temp = scan.nextLine();
-             
+             ArrayList<Integer> arrli = new ArrayList<Integer>();
              String[] temp1 = temp.split(" ");
              int counta = 0;
             // System.out.println(temp);
@@ -47,6 +47,7 @@ final class Solution {
                     a[counta++] =  + j;
                     freq++;
                     freqj++;
+                    arrli.add(j);
                 }
              } 
              // String s = "";
@@ -63,7 +64,7 @@ final class Solution {
              
           // }
           if (counta != 0) {
-          Filesort obj = new Filesort(i, freqj);
+          Filesort obj = new Filesort(i, freqj, arrli);
           sort.add(obj);
       }
         }
