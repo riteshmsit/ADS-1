@@ -40,7 +40,7 @@ class Insertion {
             //     str += a[j];
             // }
             str = str.substring(0, str.length() - 2);
-            str += "]" + "\n";
+            str +=   "\n";
 
         }
         return str;
