@@ -20,6 +20,7 @@ class Insertion {
                 swap(obj, j, j-1);
             }
         }
+        System.out.println("j");
         System.out.println(toString());
     }
 // time complexity of this method is O(1). It swaps the elements only once.
