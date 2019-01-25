@@ -37,7 +37,7 @@ final class Solution {
              //System.out.println(temp1);
              int count = 0;
              int j;
-             for (j = 0; j < temp1.length - 1; j++) {
+             for (j = 0; j < temp1.length; j++) {
                 if(temp1[j].equals(line)) {
                     count++;
                     a[counta++] = "" + j + ", ";
