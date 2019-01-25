@@ -16,6 +16,8 @@ final class Solution {
     public static void main(final String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         String line = sc.nextLine();
+        Insertion sort = new Insertion();
+        //File obj = new file();
         int freq = 0;
         String s = "";
         //File path = new File("Files.txt");
@@ -33,39 +35,42 @@ final class Solution {
              String[] temp1 = temp.split(" ");
              int counta = 0;
             // System.out.println(temp);
-             String[] a = new String[temp1.length];
+             int[] a = new int[temp1.length];
 
              //System.out.println(temp1);
              int count = 0;
              int j;
+             int freqj =0;
              for (j = 0; j < temp1.length; j++) {
                 if(temp1[j].equals(line)) {
                     count++;
-                    a[counta++] = "" + j + ", ";
+                    a[counta++] =  + j;
                     freq++;
+                    freqj++;
                 }
              } 
              // String s = "";
-             if (counta != 0) {
-             s += i + ", " + count +", "+ "[";
-         } 
-             for (int k = 0; k < counta; k++) {
-                s += a[k];
-             }
+         //     if (counta != 0) {
+         //     s += i + ", " + count +", "+ "[";
+         // } 
+         //     for (int k = 0; k < counta; k++) {
+         //        s += a[k];
+         //     }
              //s = s.substring(0, s.length() - 1);
-             if (counta != 0) {
-                s = s.substring(0, s.length() - 2);
-             s += "]" + "/n";
+          //    if (counta != 0) {
+          //       s = s.substring(0, s.length() - 2);
+          //    s += "]" + "\n";
              
-          }
-            
-             
-         
-             
-
+          // }
+          if (counta != 0) {
+          Filesort obj = new Filesort(i, freqj);
+          sort.add(obj);
+      }
         }
         System.out.println(line +":" + freq);
-        System.out.println(s); 
+        sort.insertion();
+
+        //System.out.println(s); 
 
 
     }    
