@@ -5,8 +5,6 @@ moana:3
 
 Your Output: 
 moana:3
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -23,8 +21,6 @@ by:46
 
 Your Output: 
 by:46
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -37,8 +33,6 @@ king:46
 
 Your Output: 
 king:46
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -55,8 +49,6 @@ long:23
 
 Your Output: 
 long:23
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -74,8 +66,6 @@ as:77
 
 Your Output: 
 as:77
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -93,8 +83,6 @@ are:39
 
 Your Output: 
 are:39
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -112,8 +100,6 @@ a:284
 
 Your Output: 
 a:284
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -131,8 +117,6 @@ for:131
 
 Your Output: 
 for:131
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -150,8 +134,6 @@ and:320
 
 Your Output: 
 and:320
-j
-Insertion@5315b42e
 ----------------------------------------
 
 ########## Testcase 9: Passed ##########
