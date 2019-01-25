@@ -25,7 +25,7 @@ final class Solution {
     //         System.out.println(files[i]);
     //     }
     // }
-         for (int i = 0; i < 8; i++) {
+         for (int i = 0; i <= 8; i++) {
              Scanner scan = new Scanner(new File("C:/Users/rites/ADS-1/ADS-1/Exam question/Files/" + i + ".txt"));            
              String temp = scan.nextLine();
              
