@@ -4,6 +4,8 @@ class Filesort {
 	Filesort( int i, int freqj) {
 		this.freqj = freqj;
 		this.i = i;
+		// this.a = a;
+		// this.counta = counta;
 		
 	}
 	public int getfreqj() {
@@ -12,6 +14,12 @@ class Filesort {
 	public int geti() {
 		return this.i;
 	}
+	// int[] geta() {
+	// 	return this.a;
+	// }
+	// int counta() {
+	// 	return this.counta;
+	// }
 
 // time complexity of this method is O(1) as it checks one time.
 	public int compareTo(Filesort that) {

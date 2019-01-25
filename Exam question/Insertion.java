@@ -21,7 +21,8 @@ class Insertion {
             }
         }
         //System.out.println("j");
-        toString();
+        System.out.println(print(size));
+        // toString();
     }
 // time complexity of this method is O(1). It swaps the elements only once.
     public void swap(Filesort[] obj, int j, int min) {
@@ -31,17 +32,17 @@ class Insertion {
     }
 // time complexity of this method is O(N). It iterates through
 // the array to print all the objects in array.
-    public void toString(int i, int freqj, int counta,int[] a) {
+    public String print(int size ) {
         String str = "";
-        for (int k = 0; k < size; i++) {
+        for (int k = 0; k < size; k++) {
             str += obj[k].geti() + ", " + obj[k].getfreqj() + "[";
-            for (int j = 0; j < counta; j++) {
-                str += a[j];
-            }
+            // for (int j = 0; j < obj[k].counta(); j++) {
+            //     str += a[j];
+            // }
             str = str.substring(0, str.length() - 2);
             str += "]" + "\n";
 
         }
-        System.out.println(str);
+        return str;
     }
 }
