@@ -67,9 +67,14 @@ final class Solution {
           sort.add(obj);
       }
         }
+        if (freq != 0) {
         System.out.println(line +":" + freq);
+    } else {
+        System.out.println("word is not present in any file");
+    }
+    if (freq != 0) {
         sort.insertion();
-
+}
         //System.out.println(s); 
 
 

@@ -145,12 +145,11 @@ and:320
 Insertion@5315b42e
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 word is not present in any file
 
 Your Output: 
-coin:0
-Insertion@62043840
+word is not present in any file
 ----------------------------------------
 
