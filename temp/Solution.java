@@ -102,7 +102,7 @@ class WordProfileGenerator {
 		Scanner sc = new Scanner(System.in);
 		String line = sc.nextLine();
 		int totalfreq = (int) lhm.get(line).get(0);
-		System.out.println("Enter your word");
+		//System.out.println("Enter your word");
 		//String line = sc.nextLine();
 		//System.out.println(lhm);
 		ArrayList<worddetails> comp = new ArrayList<worddetails>();
