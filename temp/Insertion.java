@@ -42,7 +42,7 @@ class Insertion {
             str += s.substring(2,s.length() - 2);
             str += "\n";
         }
-
+        str.trim();
         System.out.println(str);
     }
 }
