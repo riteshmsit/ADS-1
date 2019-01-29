@@ -121,7 +121,7 @@ class WordProfileGenerator {
 			// }
 			//System.out.println(lkm.getKeys());
 			
-		
+	
 		
 			Map<String, ArrayList<Object>> test1 = new LinkedHashMap<String, ArrayList<Object>>();
 			// int y = 0;
@@ -154,12 +154,11 @@ lkm.forEach((key,value) -> {
 	//System.out.println(count);
 	//comp.add(c);
     });
-if (lhm.get(line) != null) {
 insert.insertion();
-}
+
 } else {
-			System.out.println("word is not present in any file");
-		}
+	System.out.println("word is not present in any file");
+}
 //System.out.println(count);
 //System.out.println(count);
     // Insertion.sort(comp.toArray(), Comparator comparing);
