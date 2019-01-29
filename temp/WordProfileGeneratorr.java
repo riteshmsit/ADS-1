@@ -18,7 +18,7 @@ class WordProfileGeneratorr {
 		} if (this.docid < that.docid) {
 			return 1;
 		} if (this.docid > that.docid) {
-			return 1;
+			return -1;
 		} 
 		return 0;
 	}
