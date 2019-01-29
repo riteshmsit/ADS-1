@@ -39,10 +39,10 @@ class Insertion {
         for (int i = 0; i < size; i++) {
             String s = "";
             s += obj[i].getalobj();
-            str += s.substring(2,s.length() - 2);
+            str += s.substring(2,s.length() - 2).trim();
             str += "\n";
         }
-        str.trim();
+        //str.trim();
         str += "\n";
         System.out.println(str);
     }
