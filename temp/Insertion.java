@@ -43,6 +43,7 @@ class Insertion {
             str += "\n";
         }
         str.trim();
+        str += "\n";
         System.out.println(str);
     }
 }
