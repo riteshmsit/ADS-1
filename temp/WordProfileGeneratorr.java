@@ -15,9 +15,9 @@ class WordProfileGeneratorr {
 			return 1;
 		} if (this.al1.size() < that.al1.size()) {
 			return -1;
-		} if (this.docid < that.docid) {
-			return 1;
 		} if (this.docid > that.docid) {
+			return 1;
+		} if (this.docid < that.docid) {
 			return 1;
 		} 
 		return 0;
