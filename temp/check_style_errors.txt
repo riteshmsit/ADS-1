@@ -110,11 +110,11 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:109: Line is longer than 80 characters (found 134). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:110: Line is longer than 80 characters (found 114). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:112: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:124: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:126:18: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:143: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:145: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:164: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:128: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:130:18: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:147: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:149: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:170: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 89 errors.
 Starting audit...
