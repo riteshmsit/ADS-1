@@ -101,6 +101,7 @@ class WordProfileGenerator {
 	void presenter() {
 		Scanner sc = new Scanner(System.in);
 		String line = sc.nextLine();
+		if (lhm.get(line) != null) {
 		int totalfreq = (int) lhm.get(line).get(0);
 		//System.out.println("Enter your word");
 		//String line = sc.nextLine();
@@ -119,11 +120,8 @@ class WordProfileGenerator {
 			// 	System.out.println(it.next());
 			// }
 			//System.out.println(lkm.getKeys());
-			if (lhm.get(line) != null) {
-			System.out.println(line + ":" + totalfreq);
-		} else {
-			System.out.println("word is not present in any file");
-		}
+			
+		
 		
 			Map<String, ArrayList<Object>> test1 = new LinkedHashMap<String, ArrayList<Object>>();
 			// int y = 0;
@@ -159,6 +157,9 @@ lkm.forEach((key,value) -> {
 if (lhm.get(line) != null) {
 insert.insertion();
 }
+} else {
+			System.out.println("word is not present in any file");
+		}
 //System.out.println(count);
 //System.out.println(count);
     // Insertion.sort(comp.toArray(), Comparator comparing);
