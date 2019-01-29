@@ -109,14 +109,16 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:101:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:109: Line is longer than 80 characters (found 134). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:110: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:111: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:112: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:127: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:128: Line is longer than 80 characters (found 110). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:130:18: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:147: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:149: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:170: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 89 errors.
+Checkstyle ends with 91 errors.
 Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\WordProfileGeneratorr.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\WordProfileGeneratorr.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]

@@ -108,7 +108,7 @@ class WordProfileGenerator {
 		ArrayList<worddetails> comp = new ArrayList<worddetails>();
 		LinkedHashMap<Integer, ArrayList<Object>> lkm = (LinkedHashMap<Integer, ArrayList<Object>>) this.lhm.get(line).get(1);
 		//LinkedHashMap<Integer, ArrayList<Object>> lkm = new LinkedHashMap<Integer, ArrayList<Object>>();
-		if (lhm.get(line) != null) {
+		
 			//System.out.println("Here are the contents of your word in each file");
 			// Iterator it = new Iterator();
 		    //System.out.println(lhm.get(line));
@@ -124,7 +124,7 @@ class WordProfileGenerator {
 		} else {
 			System.out.println("word is not present in any file");
 		}
-		}
+		
 			Map<String, ArrayList<Object>> test1 = new LinkedHashMap<String, ArrayList<Object>>();
 			// int y = 0;
 lkm.forEach((key,value) -> {
