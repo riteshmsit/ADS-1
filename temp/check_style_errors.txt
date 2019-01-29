@@ -113,12 +113,14 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:123: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:124: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:126: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:128:18: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:145: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:128:34: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:145: Line is longer than 80 characters (found 100). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:147: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:172: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:160:10: 'else' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:160:10: '}' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:171: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 91 errors.
+Checkstyle ends with 93 errors.
 Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\WordProfileGeneratorr.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\WordProfileGeneratorr.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]

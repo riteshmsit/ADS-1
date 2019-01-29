@@ -202,11 +202,11 @@ and:320
 3, 13, [11, 77, 183, 189, 198, 212, 283, 356, 391, 472, 663, 701, 722]
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 word is not present in any file
 
 Your Output: 
-
+word is not present in any file
 ----------------------------------------
 

@@ -125,42 +125,41 @@ class WordProfileGenerator {
 		    System.out.println(line + ":" + totalfreq);
 			Map<String, ArrayList<Object>> test1 = new LinkedHashMap<String, ArrayList<Object>>();
 			// int y = 0;
-lkm.forEach((key,value) -> {
-	// System.out.println("5");
-     //System.out.println(key + " "+ value);
-	// System.out.println(value.get(1));
-	ArrayList<Object> obj = new ArrayList<Object>();
-	ArrayList<Object> obj2 = new ArrayList<Object>();
-	ArrayList<Integer> al1 = new ArrayList<Integer>();
-	// ArrayList<Integer> val = new ArrayList<Integer>();
-	// val = (ArrayList<Integer>) value;
-	//System.out.println(val);
-    al1 = (ArrayList) value.get(1);
-    int doc = (int) key;
-    int subfreq = (int) value.get(0);
-    obj.add(doc);
-    obj.add(subfreq);
-    obj.add(al1);
-    obj2.add(obj);
-    WordProfileGeneratorr wpgg = new WordProfileGeneratorr(doc, subfreq, al1, obj2);
-    insert.add(wpgg);
-    
+		lkm.forEach((key,value) -> {
+			// System.out.println("5");
+		     //System.out.println(key + " "+ value);
+			// System.out.println(value.get(1));
+			ArrayList<Object> obj = new ArrayList<Object>();
+			ArrayList<Object> obj2 = new ArrayList<Object>();
+			ArrayList<Integer> al1 = new ArrayList<Integer>();
+			// ArrayList<Integer> val = new ArrayList<Integer>();
+			// val = (ArrayList<Integer>) value;
+			//System.out.println(val);
+		    al1 = (ArrayList) value.get(1);
+		    int doc = (int) key;
+		    int subfreq = (int) value.get(0);
+		    obj.add(doc);
+		    obj.add(subfreq);
+		    obj.add(al1);
+		    obj2.add(obj);
+		    WordProfileGeneratorr wpgg = new WordProfileGeneratorr(doc, subfreq, al1, obj2);
+		    insert.add(wpgg);
+		    
 
 
-    // System.out.println(doc);
-    // System.out.println(subfreq);
-	//worddetails c = new worddetails(key, al1);
-	// y++;
-	//System.out.println(count);
-	//comp.add(c);
-    });
+		    // System.out.println(doc);
+		    // System.out.println(subfreq);
+			//worddetails c = new worddetails(key, al1);
+			// y++;
+			//System.out.println(count);
+			//comp.add(c);
+		});
 
-insert.insertion();
+		insert.insertion();
 
- if (lhm.get(line) == null) {
-	System.out.println("word is not present in any file");
-}
-}
+	}else {
+			System.out.println("word is not present in any file");
+		}
 //System.out.println(count);
 //System.out.println(count);
     // Insertion.sort(comp.toArray(), Comparator comparing);
