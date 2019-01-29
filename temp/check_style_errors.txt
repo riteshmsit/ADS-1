@@ -26,7 +26,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 24 errors.
 Starting audit...
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:3:1: Redundant import from the java.lang package - java.lang.Object. [RedundantImport]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:3:8: Unused import - java.lang.Object. [UnusedImports]
@@ -113,14 +112,13 @@ Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:113: Line is longer than 80 characters (found 96). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:123: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:124: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:125: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:126: Line is longer than 80 characters (found 110). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:128:18: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:145: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:147: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:170: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\rites\ADS-1\ADS-1\temp\Solution.java:172: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 93 errors.
+Checkstyle ends with 91 errors.
 Starting audit...
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\WordProfileGeneratorr.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\rites\ADS-1\ADS-1\temp\WordProfileGeneratorr.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
